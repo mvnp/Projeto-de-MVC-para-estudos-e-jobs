@@ -1,0 +1,16 @@
+{
+    "email":"Rimke@163.com",
+    "product_key":"e83eda-38644b-43c828-e3669b-cd8a85",
+},
+{
+    "email": "mickey@mickeykaycreative.com",
+    "product_key": "09d623-61f2c4-ee8bb3-12cef2-a9e1b1"
+},
+{
+    "email": "manhunter.pcl@shareware.must.die",
+    "product_key": "61faaf-dac84e-9f9945-4301a1-a7ec06"
+},
+{
+	“email”: “xiaosong@xiaosong.me”,
+	“product_key”: “d419f6-de89e9-0aae59-2acea1-07f92a”
+}
