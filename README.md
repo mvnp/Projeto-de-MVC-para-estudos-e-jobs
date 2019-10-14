@@ -1,5 +1,7 @@
 # Yeti! Framework
 
+É requisito trabalhar e enviar pull requests na banch **dev**
+
 ## Olá a todos! Feliz por estarem aqui!
 Desenvolvi esse framework PHP baseado em vídeo-aulas dessa playlist (https://www.youtube.com/watch?v=Aw28-krO7ZM&list=PL7A20112CF84B2229), juntas essas aulas somam 6:00:00 e transformando em aprendizado, acho que dá pra multiplicar o esforço por 10, o que dá umas 60 horas para desenvolver passo a passo.
 
