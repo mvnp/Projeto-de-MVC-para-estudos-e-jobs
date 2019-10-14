@@ -1,23 +1,27 @@
 # Yeti! Framework
 
-## Olá Marcos! Tudo bem?
-Ficamos felizes com o seu interesse em participar do nosso processo seletivo para a vaga Desenvolvedor PHP. Gostaríamos que participasse da segunda etapa, que é um desafio técnico. Topa?
+## Olá a todos! Feliz por estarem aqui!
+Desenvolvi esse framework PHP baseado em vídeo-aulas dessa playlist (https://www.youtube.com/watch?v=Aw28-krO7ZM&list=PL7A20112CF84B2229), juntas essas aulas somam 6:00:00 e transformando em aprendizado, acho que dá pra multiplicar o esforço por 10, o que dá umas 60 horas para desenvolver passo a passo.
 
-## Desafio técnico PHP
-- Desenvolver um CRUD de Cidades e Bairros.
-- Mostrar os dados cadastrados em uma tabela com a opção "Consultar Imóveis"
-- Ao clicar nessa opção o sistema deve Consumir a API do Vista (base SANDBOX) e listar os imóveis da Cidade e Bairro selecionados.
-- O código deve seguir os padrões MVC sendo Orientado a Objeto. A linguagem a ser utilizada deve ser o PHP (sem a utilização de frameworks) como backend.
+## Funcional e PHP7
+Este framework foi desenvolvido na versão 5.6.40 do PHP mas ao trocar o servidor para a versão 7.2.22, o framework não deixou de funcionar, então é totalmente compatível com as versões mais novas do PHP.
 
-## Documentação da API Vista: 
-- vistasoft.com.br/api
-- Diferencial: Utilizar bibliotecas JavaScript para deixar mais dinâmico.
-- Entrega: Hospedar os arquivos no Bitbucket ou Github até o dia 07/10
-- Você fará a apresentação desse conteúdo aqui na Vista, no dia 08/10 (terça feira) às 14:00, é possível esse horário?
+## Pŕoximos passos
+Os proxímos passos provavelmente consistem em integrar uma interface administrativa baseada no Bootstrap 4.0 talvez usando o AdminTLE e também colocar todas essas classes para carregar com composer. O paradigma MVC foi sado, então é daquele jeito:
 
-## Nosso endereço: 
-- Av. Mal Castelo Branco, 65 – sala 406 – Campinas – São José/SC.
-- Aguardamos sua confirmação, Boa sorte!
+- faz as pesquisas na model
+- pega o resultado no controller
+- transfere o resultado para as views
 
-### Débora# Projeto-de-MVC-para-estudos-e-jobs
-# Projeto-de-MVC-para-estudos-e-jobs
+## jQuery e javascript
+A jQuery está carregada no MVC e já existe por exemplo na url ***Dashboard*** um insert via ajax. Cada controller tem sua pasta nas views, é uma forma bem organizada de colocar os arquivos e não se perder no processo de desenvolvimento. Header e footer são carregados uma vez para todas as views, também podem ser persinalizados os headers e footers para cada view (vide /core/View.php)
+
+## Setup
+Basta renomear o **config.example.php** para **config.php** e colocar os dados da sua hospedagem ou do seu localhost. Depois acesse http://meusdominio/minpasta caso o projeto esteja em alguma pasta ou acessar a raiz caso projeto esteja na raiz.
+
+## ModRewrite
+O .htaccess e o banco de dados estão sendo anexados ao projeto para que possam usá-los como base e configurações para configurar e usar o projeto.
+
+### Valeu galera
+
+#### Aguardo contribuições de código
