@@ -19,7 +19,10 @@ Os proxímos passos provavelmente consistem em integrar uma interface administra
 A jQuery está carregada no MVC e já existe por exemplo na url ***Dashboard*** um insert via ajax. Cada controller tem sua pasta nas views, é uma forma bem organizada de colocar os arquivos e não se perder no processo de desenvolvimento. Header e footer são carregados uma vez para todas as views, também podem ser persinalizados os headers e footers para cada view (vide /core/View.php)
 
 ## Setup
-Basta renomear o **config.example.php** para **config.php** e colocar os dados da sua hospedagem ou do seu localhost. Depois acesse http://meusdominio/minpasta caso o projeto esteja em alguma pasta ou acessar a raiz caso projeto esteja na raiz.
+Basta renomear o **config.example.php** para **config.php** e colocar os dados da sua hospedagem ou do seu localhost. Depois acesse http://meusdominio/minpasta caso o projeto esteja em alguma pasta ou acessar a raiz caso projeto esteja na raiz. Precisa gerar no banco de dados um primeiro usuário e senha para começar a mexer na dashboard.
+
+## Gerando uma senha - Faça depois da última linha do index.php
+echo Hash::create("sha256", "123456", HASH_PASSWORD_KEY);
 
 ## ModRewrite
 O .htaccess e o banco de dados estão sendo anexados ao projeto para que possam usá-los como base e configurações para configurar e usar o projeto.
