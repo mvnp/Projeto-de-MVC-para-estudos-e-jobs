@@ -1,7 +1,7 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="../../index2.html"><b>Admin</b>LTE</a>
+    <li><a href="<?php echo URL ?>adminlte/dash1"><b>Admin</b>LTE</a></li>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
@@ -42,7 +42,7 @@
     <!-- /.social-auth-links -->
 
     <a href="#">I forgot my password</a><br>
-    <a href="register.html" class="text-center">Register a new membership</a>
+    <a href="<?php echo URL ?>adminlte/register" class="text-center">Register a new membership</a>
 
   </div>
   <!-- /.login-box-body -->

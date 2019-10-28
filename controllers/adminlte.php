@@ -98,4 +98,88 @@ class Adminlte extends Controller
 		$this->view->title = "Administrador | MVC System";
 		$this->view->render("adminlte/chartjs", false, true);
 	}
+
+	public function general()
+	{
+		$this->view->title = "Administrador | MVC System";
+		$this->view->render("adminlte/general", false, true);
+	}
+
+	public function icons()
+	{
+		$this->view->title = "Administrador | MVC System";
+		$this->view->render("adminlte/icons", false, true);
+	}
+
+	public function buttons()
+	{
+		$this->view->title = "Administrador | MVC System";
+		$this->view->render("adminlte/buttons", false, true);
+	}
+
+	public function sliders()
+	{
+		$this->view->title = "Administrador | MVC System";
+		$this->view->render("adminlte/sliders", false, true);
+	}
+
+	public function timeline()
+	{
+		$this->view->title = "Administrador | MVC System";
+		$this->view->render("adminlte/timeline", false, true);
+	}
+
+	public function calendar()
+	{
+		$this->view->title = "Administrador | MVC System";
+		$this->view->render("adminlte/calendar", false, true);
+	}
+
+	public function lockscreen()
+	{
+		$this->view->title = "Administrador | MVC System";
+		$this->view->render("adminlte/lockscreen", false, true);
+	}
+
+	public function invoice()
+	{
+		$this->view->title = "Administrador | MVC System";
+		$this->view->render("adminlte/invoice", false, true);
+	}
+
+	public function invoiceprint()
+	{
+		$this->view->title = "Administrador | MVC System";
+		$this->view->render("adminlte/invoiceprint", false, true);
+	}
+
+	public function error404()
+	{
+		$this->view->title = "Administrador | MVC System";
+		$this->view->render("adminlte/error404", false, true);
+	}
+
+	public function error500()
+	{
+		$this->view->title = "Administrador | MVC System";
+		$this->view->render("adminlte/error500", false, true);
+	}
+
+	public function profile()
+	{
+		$this->view->title = "Administrador | MVC System";
+		$this->view->render("adminlte/profile", false, true);
+	}
+
+	public function pace()
+	{
+		$this->view->title = "Administrador | MVC System";
+		$this->view->render("adminlte/pace", false, true);
+	}
+
+	public function modals()
+	{
+		$this->view->title = "Administrador | MVC System";
+		$this->view->render("adminlte/modals", false, true);
+	}
 }

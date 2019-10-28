@@ -158,8 +158,7 @@
                         <small class="pull-right">20%</small>
                       </h3>
                       <div class="progress xs">
-                        <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar"
-                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
                           <span class="sr-only">20% Complete</span>
                         </div>
                       </div>
@@ -173,8 +172,7 @@
                         <small class="pull-right">40%</small>
                       </h3>
                       <div class="progress xs">
-                        <div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar"
-                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
                           <span class="sr-only">40% Complete</span>
                         </div>
                       </div>
@@ -188,8 +186,7 @@
                         <small class="pull-right">60%</small>
                       </h3>
                       <div class="progress xs">
-                        <div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar"
-                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
                           <span class="sr-only">60% Complete</span>
                         </div>
                       </div>
@@ -203,8 +200,7 @@
                         <small class="pull-right">80%</small>
                       </h3>
                       <div class="progress xs">
-                        <div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar"
-                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
                           <span class="sr-only">80% Complete</span>
                         </div>
                       </div>
@@ -286,7 +282,7 @@
       <form action="#" method="get" class="sidebar-form">
         <div class="input-group">
           <input type="text" name="q" class="form-control" placeholder="Search...">
-          <span class="input-group-btn">
+              <span class="input-group-btn">
                 <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
                 </button>
               </span>
@@ -364,7 +360,7 @@
             <li><a href="<?php echo URL ?>adminlte/modals"><i class="fa fa-circle-o"></i> Modals</a></li>
           </ul>
         </li>
-        <li class="treeview active">
+        <li class="treeview">
           <a href="#">
             <i class="fa fa-edit"></i> <span>Forms</span>
             <span class="pull-right-container">
@@ -372,9 +368,9 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="<?php echo URL ?>adminlte/form1"><i class="fa fa-circle-o"></i> General Elements</a></li>
-            <li><a href="advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
-            <li class="active"><a href="editors.html"><i class="fa fa-circle-o"></i> Editors</a></li>
+            <li><a href="<?php echo URL ?>adminlte/form1"><i class="fa fa-circle-o"></i> General Elements</a></li>
+            <li><a href="<?php echo URL ?>adminlte/form2"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
+            <li><a href="<?php echo URL ?>adminlte/form3"><i class="fa fa-circle-o"></i> Editors</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -408,7 +404,7 @@
             </span>
           </a>
         </li>
-        <li class="treeview">
+        <li class="treeview active">
           <a href="#">
             <i class="fa fa-folder"></i> <span>Examples</span>
             <span class="pull-right-container">
@@ -418,13 +414,13 @@
           <ul class="treeview-menu">
             <li><a href="<?php echo URL ?>adminlte/invoice"><i class="fa fa-circle-o"></i> Invoice</a></li>
             <li><a href="<?php echo URL ?>adminlte/profile"><i class="fa fa-circle-o"></i> Profile</a></li>
-            <li><a href="<?php echo URL ?>adminlte/login"><i class="fa fa-circle-o"></i> Login</a></li>
-            <li><a href="<?php echo URL ?>adminlte/register"><i class="fa fa-circle-o"></i> Register</a></li>
-            <li><a href="<?php echo URL ?>adminlte/lockscreen"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
-            <li><a href="<?php echo URL ?>adminlte/error404"><i class="fa fa-circle-o"></i> 404 Error</a></li>
-            <li><a href="<?php echo URL ?>adminlte/error500"><i class="fa fa-circle-o"></i> 500 Error</a></li>
-            <li><a href="<?php echo URL ?>adminlte/blank"><i class="fa fa-circle-o"></i> Blank Page</a></li>
-            <li><a href="<?php echo URL ?>adminlte/pace"><i class="fa fa-circle-o"></i> Pace Page</a></li>
+            <li class="active"><a href="<?php echo URL ?>adminlte/login"><i class="fa fa-circle-o"></i> Login</a></li>
+            <li class="active"><a href="<?php echo URL ?>/adminlte/register"><i class="fa fa-circle-o"></i> Register</a></li>
+            <li><a href="<?php echo URL ?>/adminlte/lockscreen"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
+            <li><a href="<?php echo URL ?>/adminlte/error404"><i class="fa fa-circle-o"></i> 404 Error</a></li>
+            <li class="active"><a href="500.html"><i class="fa fa-circle-o"></i> 500 Error</a></li>
+            <li><a href="<?php echo URL ?>/adminlte/blank"><i class="fa fa-circle-o"></i> Blank Page</a></li>
+            <li><a href="<?php echo URL ?>/adminlte/pace"><i class="fa fa-circle-o"></i> Pace Page</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -475,75 +471,44 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Text Editors
-        <small>Advanced form element</small>
+        500 Error Page
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="#">Forms</a></li>
-        <li class="active">Editors</li>
+        <li><a href="#">Examples</a></li>
+        <li class="active">500 error</li>
       </ol>
     </section>
 
     <!-- Main content -->
     <section class="content">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="box box-info">
-            <div class="box-header">
-              <h3 class="box-title">CK Editor
-                <small>Advanced and full of features</small>
-              </h3>
-              <!-- tools box -->
-              <div class="pull-right box-tools">
-                <button type="button" class="btn btn-info btn-sm" data-widget="collapse" data-toggle="tooltip"
-                        title="Collapse">
-                  <i class="fa fa-minus"></i></button>
-                <button type="button" class="btn btn-info btn-sm" data-widget="remove" data-toggle="tooltip"
-                        title="Remove">
-                  <i class="fa fa-times"></i></button>
-              </div>
-              <!-- /. tools -->
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body pad">
-              <form>
-                    <textarea id="editor1" name="editor1" rows="10" cols="80">
-                                            This is my textarea to be replaced with CKEditor.
-                    </textarea>
-              </form>
-            </div>
-          </div>
-          <!-- /.box -->
 
-          <div class="box">
-            <div class="box-header">
-              <h3 class="box-title">Bootstrap WYSIHTML5
-                <small>Simple and fast</small>
-              </h3>
-              <!-- tools box -->
-              <div class="pull-right box-tools">
-                <button type="button" class="btn btn-default btn-sm" data-widget="collapse" data-toggle="tooltip"
-                        title="Collapse">
-                  <i class="fa fa-minus"></i></button>
-                <button type="button" class="btn btn-default btn-sm" data-widget="remove" data-toggle="tooltip"
-                        title="Remove">
-                  <i class="fa fa-times"></i></button>
+      <div class="error-page">
+        <h2 class="headline text-red">500</h2>
+
+        <div class="error-content">
+          <h3><i class="fa fa-warning text-red"></i> Oops! Something went wrong.</h3>
+
+          <p>
+            We will work on fixing that right away.
+            Meanwhile, you may <a href="../../index.html">return to dashboard</a> or try using the search form.
+          </p>
+
+          <form class="search-form">
+            <div class="input-group">
+              <input type="text" name="search" class="form-control" placeholder="Search">
+
+              <div class="input-group-btn">
+                <button type="submit" name="submit" class="btn btn-danger btn-flat"><i class="fa fa-search"></i>
+                </button>
               </div>
-              <!-- /. tools -->
             </div>
-            <!-- /.box-header -->
-            <div class="box-body pad">
-              <form>
-                <textarea class="textarea" placeholder="Place some text here"
-                          style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
-              </form>
-            </div>
-          </div>
+            <!-- /.input-group -->
+          </form>
         </div>
-        <!-- /.col-->
       </div>
-      <!-- ./row -->
+      <!-- /.error-page -->
+
     </section>
     <!-- /.content -->
   </div>

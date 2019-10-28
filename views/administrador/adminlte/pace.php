@@ -1,4 +1,5 @@
 <body class="hold-transition skin-blue sidebar-mini">
+<!-- Site wrapper -->
 <div class="wrapper">
 
   <header class="main-header">
@@ -45,54 +46,6 @@
                     </a>
                   </li>
                   <!-- end message -->
-                  <li>
-                    <a href="#">
-                      <div class="pull-left">
-                        <img src="<?php echo PUBLIC_URL ?>img/user3-128x128.jpg" class="img-circle" alt="User Image">
-                      </div>
-                      <h4>
-                        AdminLTE Design Team
-                        <small><i class="fa fa-clock-o"></i> 2 hours</small>
-                      </h4>
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="pull-left">
-                        <img src="<?php echo PUBLIC_URL ?>img/user4-128x128.jpg" class="img-circle" alt="User Image">
-                      </div>
-                      <h4>
-                        Developers
-                        <small><i class="fa fa-clock-o"></i> Today</small>
-                      </h4>
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="pull-left">
-                        <img src="<?php echo PUBLIC_URL ?>img/user3-128x128.jpg" class="img-circle" alt="User Image">
-                      </div>
-                      <h4>
-                        Sales Department
-                        <small><i class="fa fa-clock-o"></i> Yesterday</small>
-                      </h4>
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="pull-left">
-                        <img src="<?php echo PUBLIC_URL ?>img/user4-128x128.jpg" class="img-circle" alt="User Image">
-                      </div>
-                      <h4>
-                        Reviewers
-                        <small><i class="fa fa-clock-o"></i> 2 days</small>
-                      </h4>
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
                 </ul>
               </li>
               <li class="footer"><a href="#">See All Messages</a></li>
@@ -112,27 +65,6 @@
                   <li>
                     <a href="#">
                       <i class="fa fa-users text-aqua"></i> 5 new members joined today
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
-                      page and may cause design problems
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-users text-red"></i> 5 new members joined
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-shopping-cart text-green"></i> 25 sales made
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-user text-red"></i> You changed your username
                     </a>
                   </li>
                 </ul>
@@ -161,51 +93,6 @@
                         <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar"
                              aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
                           <span class="sr-only">20% Complete</span>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <!-- end task item -->
-                  <li><!-- Task item -->
-                    <a href="#">
-                      <h3>
-                        Create a nice theme
-                        <small class="pull-right">40%</small>
-                      </h3>
-                      <div class="progress xs">
-                        <div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar"
-                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                          <span class="sr-only">40% Complete</span>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <!-- end task item -->
-                  <li><!-- Task item -->
-                    <a href="#">
-                      <h3>
-                        Some task I need to do
-                        <small class="pull-right">60%</small>
-                      </h3>
-                      <div class="progress xs">
-                        <div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar"
-                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                          <span class="sr-only">60% Complete</span>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <!-- end task item -->
-                  <li><!-- Task item -->
-                    <a href="#">
-                      <h3>
-                        Make beautiful transitions
-                        <small class="pull-right">80%</small>
-                      </h3>
-                      <div class="progress xs">
-                        <div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar"
-                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                          <span class="sr-only">80% Complete</span>
                         </div>
                       </div>
                     </a>
@@ -268,7 +155,10 @@
       </div>
     </nav>
   </header>
-  <!-- Left side column. contains the logo and sidebar -->
+
+  <!-- =============================================== -->
+
+  <!-- Left side column. contains the sidebar -->
   <aside class="main-sidebar">
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
@@ -326,7 +216,7 @@
           <a href="<?php echo URL ?>adminlte/widgets">
             <i class="fa fa-th"></i> <span>Widgets</span>
             <span class="pull-right-container">
-              <small class="label pull-right bg-green">new</small>
+              <small class="label pull-right bg-green">Hot</small>
             </span>
           </a>
         </li>
@@ -364,7 +254,7 @@
             <li><a href="<?php echo URL ?>adminlte/modals"><i class="fa fa-circle-o"></i> Modals</a></li>
           </ul>
         </li>
-        <li class="treeview active">
+        <li class="treeview">
           <a href="#">
             <i class="fa fa-edit"></i> <span>Forms</span>
             <span class="pull-right-container">
@@ -372,9 +262,9 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="<?php echo URL ?>adminlte/form1"><i class="fa fa-circle-o"></i> General Elements</a></li>
-            <li><a href="advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
-            <li class="active"><a href="editors.html"><i class="fa fa-circle-o"></i> Editors</a></li>
+            <li><a href="<?php echo URL ?>adminlte/form1"><i class="fa fa-circle-o"></i> General Elements</a></li>
+            <li><a href="<?php echo URL ?>adminlte/form2"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
+            <li><a href="<?php echo URL ?>adminlte/form3"><i class="fa fa-circle-o"></i> Editors</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -408,7 +298,7 @@
             </span>
           </a>
         </li>
-        <li class="treeview">
+        <li class="treeview active">
           <a href="#">
             <i class="fa fa-folder"></i> <span>Examples</span>
             <span class="pull-right-container">
@@ -418,13 +308,13 @@
           <ul class="treeview-menu">
             <li><a href="<?php echo URL ?>adminlte/invoice"><i class="fa fa-circle-o"></i> Invoice</a></li>
             <li><a href="<?php echo URL ?>adminlte/profile"><i class="fa fa-circle-o"></i> Profile</a></li>
-            <li><a href="<?php echo URL ?>adminlte/login"><i class="fa fa-circle-o"></i> Login</a></li>
-            <li><a href="<?php echo URL ?>adminlte/register"><i class="fa fa-circle-o"></i> Register</a></li>
-            <li><a href="<?php echo URL ?>adminlte/lockscreen"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
-            <li><a href="<?php echo URL ?>adminlte/error404"><i class="fa fa-circle-o"></i> 404 Error</a></li>
-            <li><a href="<?php echo URL ?>adminlte/error500"><i class="fa fa-circle-o"></i> 500 Error</a></li>
-            <li><a href="<?php echo URL ?>adminlte/blank"><i class="fa fa-circle-o"></i> Blank Page</a></li>
-            <li><a href="<?php echo URL ?>adminlte/pace"><i class="fa fa-circle-o"></i> Pace Page</a></li>
+            <li class="active"><a href="<?php echo URL ?>adminlte/login"><i class="fa fa-circle-o"></i> Login</a></li>
+            <li class="active"><a href="<?php echo URL ?>/adminlte/register"><i class="fa fa-circle-o"></i> Register</a></li>
+            <li><a href="<?php echo URL ?>/adminlte/lockscreen"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
+            <li><a href="<?php echo URL ?>/adminlte/error404"><i class="fa fa-circle-o"></i> 404 Error</a></li>
+            <li><a href="<?php echo URL ?>/adminlte/error500"><i class="fa fa-circle-o"></i> 500 Error</a></li>
+            <li><a href="<?php echo URL ?>/adminlte/blank"><i class="fa fa-circle-o"></i> Blank Page</a></li>
+            <li class="active"><a href="<?php echo URL ?>/adminlte/pace"><i class="fa fa-circle-o"></i> Pace Page</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -470,84 +360,66 @@
     <!-- /.sidebar -->
   </aside>
 
+  <!-- =============================================== -->
+
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Text Editors
-        <small>Advanced form element</small>
+        Pace page
+        <small>Loading example</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="#">Forms</a></li>
-        <li class="active">Editors</li>
+        <li><a href="#">Examples</a></li>
+        <li class="active">Pace page</li>
       </ol>
     </section>
 
     <!-- Main content -->
     <section class="content">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="box box-info">
-            <div class="box-header">
-              <h3 class="box-title">CK Editor
-                <small>Advanced and full of features</small>
-              </h3>
-              <!-- tools box -->
-              <div class="pull-right box-tools">
-                <button type="button" class="btn btn-info btn-sm" data-widget="collapse" data-toggle="tooltip"
-                        title="Collapse">
-                  <i class="fa fa-minus"></i></button>
-                <button type="button" class="btn btn-info btn-sm" data-widget="remove" data-toggle="tooltip"
-                        title="Remove">
-                  <i class="fa fa-times"></i></button>
-              </div>
-              <!-- /. tools -->
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body pad">
-              <form>
-                    <textarea id="editor1" name="editor1" rows="10" cols="80">
-                                            This is my textarea to be replaced with CKEditor.
-                    </textarea>
-              </form>
-            </div>
-          </div>
-          <!-- /.box -->
 
-          <div class="box">
-            <div class="box-header">
-              <h3 class="box-title">Bootstrap WYSIHTML5
-                <small>Simple and fast</small>
-              </h3>
-              <!-- tools box -->
-              <div class="pull-right box-tools">
-                <button type="button" class="btn btn-default btn-sm" data-widget="collapse" data-toggle="tooltip"
-                        title="Collapse">
-                  <i class="fa fa-minus"></i></button>
-                <button type="button" class="btn btn-default btn-sm" data-widget="remove" data-toggle="tooltip"
-                        title="Remove">
-                  <i class="fa fa-times"></i></button>
-              </div>
-              <!-- /. tools -->
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body pad">
-              <form>
-                <textarea class="textarea" placeholder="Place some text here"
-                          style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
-              </form>
-            </div>
+      <!-- Default box -->
+      <div class="box">
+        <div class="box-header with-border">
+          <h3 class="box-title">Title</h3>
+
+          <div class="box-tools pull-right">
+            <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
+                    title="Collapse">
+              <i class="fa fa-minus"></i></button>
+            <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove">
+              <i class="fa fa-times"></i></button>
           </div>
         </div>
-        <!-- /.col-->
+        <div class="box-body">
+          Pace loading works automatically on page. You can still implement it with ajax requests by adding this js:
+          <br/><code>$(document).ajaxStart(function() { Pace.restart(); });</code>
+          <br/>
+          <div class="row">
+            <div class="col-xs-12 text-center">
+              <button type="button" class="btn btn-default btn-lrg ajax" title="Ajax Request">
+                <i class="fa fa-spin fa-refresh"></i>&nbsp; Get External Content
+              </button>
+            </div>
+          </div>
+          <div class="ajax-content">
+          </div>
+        </div>
+        <!-- /.box-body -->
+        <div class="box-footer">
+          Footer
+        </div>
+        <!-- /.box-footer-->
       </div>
-      <!-- ./row -->
+      <!-- /.box -->
+
     </section>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
+
   <footer class="main-footer">
     <div class="pull-right hidden-xs">
       <b>Version</b> 2.4.18
@@ -561,6 +433,7 @@
     <!-- Create the tabs -->
     <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
       <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+
       <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
     </ul>
     <!-- Tab panes -->

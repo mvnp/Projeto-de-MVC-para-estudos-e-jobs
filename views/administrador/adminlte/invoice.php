@@ -158,8 +158,7 @@
                         <small class="pull-right">20%</small>
                       </h3>
                       <div class="progress xs">
-                        <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar"
-                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
                           <span class="sr-only">20% Complete</span>
                         </div>
                       </div>
@@ -173,8 +172,7 @@
                         <small class="pull-right">40%</small>
                       </h3>
                       <div class="progress xs">
-                        <div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar"
-                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
                           <span class="sr-only">40% Complete</span>
                         </div>
                       </div>
@@ -188,8 +186,7 @@
                         <small class="pull-right">60%</small>
                       </h3>
                       <div class="progress xs">
-                        <div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar"
-                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
                           <span class="sr-only">60% Complete</span>
                         </div>
                       </div>
@@ -203,8 +200,7 @@
                         <small class="pull-right">80%</small>
                       </h3>
                       <div class="progress xs">
-                        <div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar"
-                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
                           <span class="sr-only">80% Complete</span>
                         </div>
                       </div>
@@ -286,7 +282,7 @@
       <form action="#" method="get" class="sidebar-form">
         <div class="input-group">
           <input type="text" name="q" class="form-control" placeholder="Search...">
-          <span class="input-group-btn">
+              <span class="input-group-btn">
                 <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
                 </button>
               </span>
@@ -355,16 +351,14 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo URL ?>adminlte/general"><i class="fa fa-circle-o"></i> General</a></li>
-            <li><a href="<?php echo URL ?>adminlte/icons"><i class="fa fa-circle-o"></i> Icons</a></li>
-            <li><a href="<?php echo URL ?>adminlte/buttons"><i class="fa fa-circle-o"></i> Buttons</a></li>
-            <li><a href="<?php echo URL ?>adminlte/sliders"><i class="fa fa-circle-o"></i> Sliders</a></li>
-            <li><a href="<?php echo URL ?>adminlte/timeline"><i class="fa fa-circle-o"></i> Timeline</a></li>
-
+            <li><a href="../UI/general.html"><i class="fa fa-circle-o"></i> General</a></li>
+            <li><a href="../UI/icons.html"><i class="fa fa-circle-o"></i> Icons</a></li>
+            <li><a href="../UI/buttons.html"><i class="fa fa-circle-o"></i> Buttons</a></li>
+            <li><a href="../UI/sliders.html"><i class="fa fa-circle-o"></i> Sliders</a></li>
             <li><a href="<?php echo URL ?>adminlte/modals"><i class="fa fa-circle-o"></i> Modals</a></li>
           </ul>
         </li>
-        <li class="treeview active">
+        <li class="treeview">
           <a href="#">
             <i class="fa fa-edit"></i> <span>Forms</span>
             <span class="pull-right-container">
@@ -372,9 +366,9 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="<?php echo URL ?>adminlte/form1"><i class="fa fa-circle-o"></i> General Elements</a></li>
-            <li><a href="advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
-            <li class="active"><a href="editors.html"><i class="fa fa-circle-o"></i> Editors</a></li>
+            <li><a href="<?php echo URL ?>adminlte/form1"><i class="fa fa-circle-o"></i> General Elements</a></li>
+            <li><a href="<?php echo URL ?>adminlte/form2"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
+            <li><a href="<?php echo URL ?>adminlte/form3"><i class="fa fa-circle-o"></i> Editors</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -408,7 +402,7 @@
             </span>
           </a>
         </li>
-        <li class="treeview">
+        <li class="treeview active">
           <a href="#">
             <i class="fa fa-folder"></i> <span>Examples</span>
             <span class="pull-right-container">
@@ -416,15 +410,15 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo URL ?>adminlte/invoice"><i class="fa fa-circle-o"></i> Invoice</a></li>
+            <li class="active"><a href="invoice.html"><i class="fa fa-circle-o"></i> Invoice</a></li>
             <li><a href="<?php echo URL ?>adminlte/profile"><i class="fa fa-circle-o"></i> Profile</a></li>
-            <li><a href="<?php echo URL ?>adminlte/login"><i class="fa fa-circle-o"></i> Login</a></li>
-            <li><a href="<?php echo URL ?>adminlte/register"><i class="fa fa-circle-o"></i> Register</a></li>
-            <li><a href="<?php echo URL ?>adminlte/lockscreen"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
-            <li><a href="<?php echo URL ?>adminlte/error404"><i class="fa fa-circle-o"></i> 404 Error</a></li>
-            <li><a href="<?php echo URL ?>adminlte/error500"><i class="fa fa-circle-o"></i> 500 Error</a></li>
-            <li><a href="<?php echo URL ?>adminlte/blank"><i class="fa fa-circle-o"></i> Blank Page</a></li>
-            <li><a href="<?php echo URL ?>adminlte/pace"><i class="fa fa-circle-o"></i> Pace Page</a></li>
+            <li class="active"><a href="<?php echo URL ?>adminlte/login"><i class="fa fa-circle-o"></i> Login</a></li>
+            <li class="active"><a href="<?php echo URL ?>/adminlte/register"><i class="fa fa-circle-o"></i> Register</a></li>
+            <li><a href="<?php echo URL ?>/adminlte/lockscreen"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
+            <li><a href="<?php echo URL ?>/adminlte/error404"><i class="fa fa-circle-o"></i> 404 Error</a></li>
+            <li><a href="<?php echo URL ?>/adminlte/error500"><i class="fa fa-circle-o"></i> 500 Error</a></li>
+            <li><a href="<?php echo URL ?>/adminlte/blank"><i class="fa fa-circle-o"></i> Blank Page</a></li>
+            <li><a href="<?php echo URL ?>/adminlte/pace"><i class="fa fa-circle-o"></i> Pace Page</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -475,80 +469,179 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Text Editors
-        <small>Advanced form element</small>
+        Invoice
+        <small>#007612</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="#">Forms</a></li>
-        <li class="active">Editors</li>
+        <li><a href="#">Examples</a></li>
+        <li class="active">Invoice</li>
       </ol>
     </section>
 
-    <!-- Main content -->
-    <section class="content">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="box box-info">
-            <div class="box-header">
-              <h3 class="box-title">CK Editor
-                <small>Advanced and full of features</small>
-              </h3>
-              <!-- tools box -->
-              <div class="pull-right box-tools">
-                <button type="button" class="btn btn-info btn-sm" data-widget="collapse" data-toggle="tooltip"
-                        title="Collapse">
-                  <i class="fa fa-minus"></i></button>
-                <button type="button" class="btn btn-info btn-sm" data-widget="remove" data-toggle="tooltip"
-                        title="Remove">
-                  <i class="fa fa-times"></i></button>
-              </div>
-              <!-- /. tools -->
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body pad">
-              <form>
-                    <textarea id="editor1" name="editor1" rows="10" cols="80">
-                                            This is my textarea to be replaced with CKEditor.
-                    </textarea>
-              </form>
-            </div>
-          </div>
-          <!-- /.box -->
+    <div class="pad margin no-print">
+      <div class="callout callout-info" style="margin-bottom: 0!important;">
+        <h4><i class="fa fa-info"></i> Note:</h4>
+        This page has been enhanced for printing. Click the print button at the bottom of the invoice to test.
+      </div>
+    </div>
 
-          <div class="box">
-            <div class="box-header">
-              <h3 class="box-title">Bootstrap WYSIHTML5
-                <small>Simple and fast</small>
-              </h3>
-              <!-- tools box -->
-              <div class="pull-right box-tools">
-                <button type="button" class="btn btn-default btn-sm" data-widget="collapse" data-toggle="tooltip"
-                        title="Collapse">
-                  <i class="fa fa-minus"></i></button>
-                <button type="button" class="btn btn-default btn-sm" data-widget="remove" data-toggle="tooltip"
-                        title="Remove">
-                  <i class="fa fa-times"></i></button>
-              </div>
-              <!-- /. tools -->
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body pad">
-              <form>
-                <textarea class="textarea" placeholder="Place some text here"
-                          style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
-              </form>
-            </div>
+    <!-- Main content -->
+    <section class="invoice">
+      <!-- title row -->
+      <div class="row">
+        <div class="col-xs-12">
+          <h2 class="page-header">
+            <i class="fa fa-globe"></i> AdminLTE, Inc.
+            <small class="pull-right">Date: 2/10/2014</small>
+          </h2>
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- info row -->
+      <div class="row invoice-info">
+        <div class="col-sm-4 invoice-col">
+          From
+          <address>
+            <strong>Admin, Inc.</strong><br>
+            795 Folsom Ave, Suite 600<br>
+            San Francisco, CA 94107<br>
+            Phone: (804) 123-5432<br>
+            Email: info@almasaeedstudio.com
+          </address>
+        </div>
+        <!-- /.col -->
+        <div class="col-sm-4 invoice-col">
+          To
+          <address>
+            <strong>John Doe</strong><br>
+            795 Folsom Ave, Suite 600<br>
+            San Francisco, CA 94107<br>
+            Phone: (555) 539-1037<br>
+            Email: john.doe@example.com
+          </address>
+        </div>
+        <!-- /.col -->
+        <div class="col-sm-4 invoice-col">
+          <b>Invoice #007612</b><br>
+          <br>
+          <b>Order ID:</b> 4F3S8J<br>
+          <b>Payment Due:</b> 2/22/2014<br>
+          <b>Account:</b> 968-34567
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+
+      <!-- Table row -->
+      <div class="row">
+        <div class="col-xs-12 table-responsive">
+          <table class="table table-striped">
+            <thead>
+            <tr>
+              <th>Qty</th>
+              <th>Product</th>
+              <th>Serial #</th>
+              <th>Description</th>
+              <th>Subtotal</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>1</td>
+              <td>Call of Duty</td>
+              <td>455-981-221</td>
+              <td>El snort testosterone trophy driving gloves handsome</td>
+              <td>$64.50</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Need for Speed IV</td>
+              <td>247-925-726</td>
+              <td>Wes Anderson umami biodiesel</td>
+              <td>$50.00</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Monsters DVD</td>
+              <td>735-845-642</td>
+              <td>Terry Richardson helvetica tousled street art master</td>
+              <td>$10.70</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Grown Ups Blue Ray</td>
+              <td>422-568-642</td>
+              <td>Tousled lomo letterpress</td>
+              <td>$25.99</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+
+      <div class="row">
+        <!-- accepted payments column -->
+        <div class="col-xs-6">
+          <p class="lead">Payment Methods:</p>
+          <img src="<?php echo PUBLIC_URL ?>img/credit/visa.png" alt="Visa">
+          <img src="<?php echo PUBLIC_URL ?>img/credit/mastercard.png" alt="Mastercard">
+          <img src="<?php echo PUBLIC_URL ?>img/credit/american-express.png" alt="American Express">
+          <img src="<?php echo PUBLIC_URL ?>img/credit/paypal2.png" alt="Paypal">
+
+          <p class="text-muted well well-sm no-shadow" style="margin-top: 10px;">
+            Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles, weebly ning heekya handango imeem plugg
+            dopplr jibjab, movity jajah plickers sifteo edmodo ifttt zimbra.
+          </p>
+        </div>
+        <!-- /.col -->
+        <div class="col-xs-6">
+          <p class="lead">Amount Due 2/22/2014</p>
+
+          <div class="table-responsive">
+            <table class="table">
+              <tr>
+                <th style="width:50%">Subtotal:</th>
+                <td>$250.30</td>
+              </tr>
+              <tr>
+                <th>Tax (9.3%)</th>
+                <td>$10.34</td>
+              </tr>
+              <tr>
+                <th>Shipping:</th>
+                <td>$5.80</td>
+              </tr>
+              <tr>
+                <th>Total:</th>
+                <td>$265.24</td>
+              </tr>
+            </table>
           </div>
         </div>
-        <!-- /.col-->
+        <!-- /.col -->
       </div>
-      <!-- ./row -->
+      <!-- /.row -->
+
+      <!-- this row will not appear when printing -->
+      <div class="row no-print">
+        <div class="col-xs-12">
+          <a href="invoice-print.html" target="_blank" class="btn btn-default"><i class="fa fa-print"></i> Print</a>
+          <button type="button" class="btn btn-success pull-right"><i class="fa fa-credit-card"></i> Submit Payment
+          </button>
+          <button type="button" class="btn btn-primary pull-right" style="margin-right: 5px;">
+            <i class="fa fa-download"></i> Generate PDF
+          </button>
+        </div>
+      </div>
     </section>
     <!-- /.content -->
+    <div class="clearfix"></div>
   </div>
   <!-- /.content-wrapper -->
-  <footer class="main-footer">
+  <footer class="main-footer no-print">
     <div class="pull-right hidden-xs">
       <b>Version</b> 2.4.18
     </div>

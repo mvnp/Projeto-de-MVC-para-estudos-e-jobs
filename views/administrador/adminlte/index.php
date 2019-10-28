@@ -3,7 +3,7 @@
 
   <header class="main-header">
     <!-- Logo -->
-    <a href="index2.html" class="logo">
+    <a href="<?php echo URL ?>adminlte/dash2" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>A</b>LT</span>
       <!-- logo for regular state and mobile devices -->
@@ -32,7 +32,7 @@
                   <li><!-- start message -->
                     <a href="#">
                       <div class="pull-left">
-                        <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                        <img src="<?php echo PUBLIC_URL ?>img/user2-160x160.jpg" class="img-circle" alt="User Image">
                       </div>
                       <h4>
                         Support Team
@@ -45,7 +45,7 @@
                   <li>
                     <a href="#">
                       <div class="pull-left">
-                        <img src="dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+                        <img src="<?php echo PUBLIC_URL ?>img/user3-128x128.jpg" class="img-circle" alt="User Image">
                       </div>
                       <h4>
                         AdminLTE Design Team
@@ -57,7 +57,7 @@
                   <li>
                     <a href="#">
                       <div class="pull-left">
-                        <img src="dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+                        <img src="<?php echo PUBLIC_URL ?>img/user4-128x128.jpg" class="img-circle" alt="User Image">
                       </div>
                       <h4>
                         Developers
@@ -69,7 +69,7 @@
                   <li>
                     <a href="#">
                       <div class="pull-left">
-                        <img src="dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+                        <img src="<?php echo PUBLIC_URL ?>img/user3-128x128.jpg" class="img-circle" alt="User Image">
                       </div>
                       <h4>
                         Sales Department
@@ -81,7 +81,7 @@
                   <li>
                     <a href="#">
                       <div class="pull-left">
-                        <img src="dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+                        <img src="<?php echo PUBLIC_URL ?>img/user4-128x128.jpg" class="img-circle" alt="User Image">
                       </div>
                       <h4>
                         Reviewers
@@ -218,13 +218,13 @@
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <img src="<?php echo PUBLIC_URL ?>img/user2-160x160.jpg" class="user-image" alt="User Image">
               <span class="hidden-xs">Alexander Pierce</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src="<?php echo PUBLIC_URL ?>img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                 <p>
                   Alexander Pierce - Web Developer
@@ -272,7 +272,7 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+          <img src="<?php echo PUBLIC_URL ?>img/user2-160x160.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p>Alexander Pierce</p>
@@ -301,7 +301,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
+            <li class="active"><a href="<?php echo URL ?>adminlte/index"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
             <li><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
           </ul>
         </li>
@@ -314,10 +314,10 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
-            <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
-            <li><a href="pages/layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
-            <li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
+            <li><a href="<?php echo URL ?>adminlte/topnav"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
+            <li><a href="<?php echo URL ?>adminlte/boxed"><i class="fa fa-circle-o"></i> Boxed</a></li>
+            <li><a href="<?php echo URL ?>adminlte/fixed"><i class="fa fa-circle-o"></i> Fixed</a></li>
+            <li><a href="<?php echo URL ?>adminlte/colsidebar"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
           </ul>
         </li>
         <li>
@@ -337,10 +337,10 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
-            <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
-            <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
-            <li><a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
+            <li><a href="<?php echo URL ?>adminlte/chartjs"><i class="fa fa-circle-o"></i> ChartJS</a></li>
+            <li><a href="<?php echo URL ?>adminlte/morris"><i class="fa fa-circle-o"></i> Morris</a></li>
+            <li><a href="<?php echo URL ?>adminlte/flot"><i class="fa fa-circle-o"></i> Flot</a></li>
+            <li><a href="<?php echo URL ?>adminlte/inline"><i class="fa fa-circle-o"></i> Inline charts</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -352,12 +352,12 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> General</a></li>
-            <li><a href="pages/UI/icons.html"><i class="fa fa-circle-o"></i> Icons</a></li>
-            <li><a href="pages/UI/buttons.html"><i class="fa fa-circle-o"></i> Buttons</a></li>
-            <li><a href="pages/UI/sliders.html"><i class="fa fa-circle-o"></i> Sliders</a></li>
-            <li><a href="pages/UI/timeline.html"><i class="fa fa-circle-o"></i> Timeline</a></li>
-            <li><a href="pages/UI/modals.html"><i class="fa fa-circle-o"></i> Modals</a></li>
+            <li><a href="<?php echo URL ?>adminlte/general"><i class="fa fa-circle-o"></i> General</a></li>
+            <li><a href="<?php echo URL ?>adminlte/icons"><i class="fa fa-circle-o"></i> Icons</a></li>
+            <li><a href="<?php echo URL ?>adminlte/buttons"><i class="fa fa-circle-o"></i> Buttons</a></li>
+            <li><a href="<?php echo URL ?>adminlte/sliders"><i class="fa fa-circle-o"></i> Sliders</a></li>
+            <li><a href="<?php echo URL ?>adminlte/timeline"><i class="fa fa-circle-o"></i> Timeline</a></li>
+            <li><a href="<?php echo URL ?>adminlte/modals"><i class="fa fa-circle-o"></i> Modals</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -368,9 +368,9 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="pages/forms/general.html"><i class="fa fa-circle-o"></i> General Elements</a></li>
-            <li><a href="pages/forms/advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
-            <li><a href="pages/forms/editors.html"><i class="fa fa-circle-o"></i> Editors</a></li>
+            <li><a href="<?php echo URL ?>adminlte/form1"><i class="fa fa-circle-o"></i> General Elements</a></li>
+            <li><a href="<?php echo URL ?>adminlte/form2"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
+            <li><a href="<?php echo URL ?>adminlte/form3"><i class="fa fa-circle-o"></i> Editors</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -381,8 +381,9 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="pages/tables/simple.html"><i class="fa fa-circle-o"></i> Simple tables</a></li>
-            <li><a href="pages/tables/data.html"><i class="fa fa-circle-o"></i> Data tables</a></li>
+
+            <li><a href="<?php echo URL ?>adminlte/form1"><i class="fa fa-circle-o"></i> Simple tables</a></li>
+            <li><a href="<?php echo URL ?>adminlte/form2"><i class="fa fa-circle-o"></i> Data tables</a></li>
           </ul>
         </li>
         <li>
@@ -395,7 +396,7 @@
           </a>
         </li>
         <li>
-          <a href="pages/mailbox/mailbox.html">
+          <a href="<?php echo URL ?>adminlte/mailbox">
             <i class="fa fa-envelope"></i> <span>Mailbox</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-yellow">12</small>
@@ -412,15 +413,15 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="pages/examples/invoice.html"><i class="fa fa-circle-o"></i> Invoice</a></li>
-            <li><a href="pages/examples/profile.html"><i class="fa fa-circle-o"></i> Profile</a></li>
-            <li><a href="pages/examples/login.html"><i class="fa fa-circle-o"></i> Login</a></li>
-            <li><a href="pages/examples/register.html"><i class="fa fa-circle-o"></i> Register</a></li>
-            <li><a href="pages/examples/lockscreen.html"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
-            <li><a href="pages/examples/404.html"><i class="fa fa-circle-o"></i> 404 Error</a></li>
-            <li><a href="pages/examples/500.html"><i class="fa fa-circle-o"></i> 500 Error</a></li>
-            <li><a href="pages/examples/blank.html"><i class="fa fa-circle-o"></i> Blank Page</a></li>
-            <li><a href="pages/examples/pace.html"><i class="fa fa-circle-o"></i> Pace Page</a></li>
+            <li><a href="<?php echo URL ?>adminlte/invoice"><i class="fa fa-circle-o"></i> Invoice</a></li>
+            <li><a href="<?php echo URL ?>adminlte/profile"><i class="fa fa-circle-o"></i> Profile</a></li>
+            <li><a href="<?php echo URL ?>adminlte/login"><i class="fa fa-circle-o"></i> Login</a></li>
+            <li><a href="<?php echo URL ?>adminlte/register"><i class="fa fa-circle-o"></i> Register</a></li>
+            <li><a href="<?php echo URL ?>adminlte/lockscreen"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
+            <li><a href="<?php echo URL ?>adminlte/error404"><i class="fa fa-circle-o"></i> 404 Error</a></li>
+            <li><a href="<?php echo URL ?>adminlte/error500"><i class="fa fa-circle-o"></i> 500 Error</a></li>
+            <li><a href="<?php echo URL ?>adminlte/blank"><i class="fa fa-circle-o"></i> Blank Page</a></li>
+            <li><a href="<?php echo URL ?>adminlte/pace"><i class="fa fa-circle-o"></i> Pace Page</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -584,7 +585,7 @@
             <div class="box-body chat" id="chat-box">
               <!-- chat item -->
               <div class="item">
-                <img src="dist/img/user4-128x128.jpg" alt="user image" class="online">
+                <img src="<?php echo PUBLIC_URL ?>img/user4-128x128.jpg" alt="user image" class="online">
 
                 <p class="message">
                   <a href="#" class="name">
@@ -611,7 +612,7 @@
               <!-- /.item -->
               <!-- chat item -->
               <div class="item">
-                <img src="dist/img/user3-128x128.jpg" alt="user image" class="offline">
+                <img src="<?php echo PUBLIC_URL ?>img/user3-128x128.jpg" alt="user image" class="offline">
 
                 <p class="message">
                   <a href="#" class="name">
@@ -626,7 +627,7 @@
               <!-- /.item -->
               <!-- chat item -->
               <div class="item">
-                <img src="dist/img/user2-160x160.jpg" alt="user image" class="offline">
+                <img src="<?php echo PUBLIC_URL ?>img/user2-160x160.jpg" alt="user image" class="offline">
 
                 <p class="message">
                   <a href="#" class="name">

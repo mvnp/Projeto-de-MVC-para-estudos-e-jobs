@@ -343,10 +343,9 @@
             <li><a href="<?php echo URL ?>adminlte/morris"><i class="fa fa-circle-o"></i> Morris</a></li>
             <li><a href="<?php echo URL ?>adminlte/flot"><i class="fa fa-circle-o"></i> Flot</a></li>
             <li><a href="<?php echo URL ?>adminlte/inline"><i class="fa fa-circle-o"></i> Inline charts</a></li>
-
           </ul>
         </li>
-        <li class="treeview">
+        <li class="treeview active">
           <a href="#">
             <i class="fa fa-laptop"></i>
             <span>UI Elements</span>
@@ -355,16 +354,15 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo URL ?>adminlte/general"><i class="fa fa-circle-o"></i> General</a></li>
-            <li><a href="<?php echo URL ?>adminlte/icons"><i class="fa fa-circle-o"></i> Icons</a></li>
+            <li><a href="<?php echo URL ?>adminlte/index"><i class="fa fa-circle-o"></i> General</a></li>
+            <li><a href="<?php echo URL ?>icons"><i class="fa fa-circle-o"></i> Icons</a></li>
             <li><a href="<?php echo URL ?>adminlte/buttons"><i class="fa fa-circle-o"></i> Buttons</a></li>
             <li><a href="<?php echo URL ?>adminlte/sliders"><i class="fa fa-circle-o"></i> Sliders</a></li>
-            <li><a href="<?php echo URL ?>adminlte/timeline"><i class="fa fa-circle-o"></i> Timeline</a></li>
-
+             <li class="active"><a href="<?php echo URL ?>adminlte/timeline"><i class="fa fa-circle-o"></i> Timeline</a></li>
             <li><a href="<?php echo URL ?>adminlte/modals"><i class="fa fa-circle-o"></i> Modals</a></li>
           </ul>
         </li>
-        <li class="treeview active">
+        <li class="treeview">
           <a href="#">
             <i class="fa fa-edit"></i> <span>Forms</span>
             <span class="pull-right-container">
@@ -372,9 +370,9 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="<?php echo URL ?>adminlte/form1"><i class="fa fa-circle-o"></i> General Elements</a></li>
-            <li><a href="advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
-            <li class="active"><a href="editors.html"><i class="fa fa-circle-o"></i> Editors</a></li>
+            <li><a href="<?php echo URL ?>adminlte/form1"><i class="fa fa-circle-o"></i> General Elements</a></li>
+            <li><a href="<?php echo URL ?>adminlte/form2"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
+            <li><a href="<?php echo URL ?>adminlte/form3"><i class="fa fa-circle-o"></i> Editors</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -475,79 +473,196 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Text Editors
-        <small>Advanced form element</small>
+        Timeline
+        <small>example</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="#">Forms</a></li>
-        <li class="active">Editors</li>
+        <li><a href="#">UI</a></li>
+        <li class="active">Timeline</li>
       </ol>
     </section>
 
     <!-- Main content -->
     <section class="content">
+
+      <!-- row -->
       <div class="row">
         <div class="col-md-12">
-          <div class="box box-info">
-            <div class="box-header">
-              <h3 class="box-title">CK Editor
-                <small>Advanced and full of features</small>
-              </h3>
-              <!-- tools box -->
-              <div class="pull-right box-tools">
-                <button type="button" class="btn btn-info btn-sm" data-widget="collapse" data-toggle="tooltip"
-                        title="Collapse">
-                  <i class="fa fa-minus"></i></button>
-                <button type="button" class="btn btn-info btn-sm" data-widget="remove" data-toggle="tooltip"
-                        title="Remove">
-                  <i class="fa fa-times"></i></button>
+          <!-- The time line -->
+          <ul class="timeline">
+            <!-- timeline time label -->
+            <li class="time-label">
+                  <span class="bg-red">
+                    10 Feb. 2014
+                  </span>
+            </li>
+            <!-- /.timeline-label -->
+            <!-- timeline item -->
+            <li>
+              <i class="fa fa-envelope bg-blue"></i>
+
+              <div class="timeline-item">
+                <span class="time"><i class="fa fa-clock-o"></i> 12:05</span>
+
+                <h3 class="timeline-header"><a href="#">Support Team</a> sent you an email</h3>
+
+                <div class="timeline-body">
+                  Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,
+                  weebly ning heekya handango imeem plugg dopplr jibjab, movity
+                  jajah plickers sifteo edmodo ifttt zimbra. Babblely odeo kaboodle
+                  quora plaxo ideeli hulu weebly balihoo...
+                </div>
+                <div class="timeline-footer">
+                  <a class="btn btn-primary btn-xs">Read more</a>
+                  <a class="btn btn-danger btn-xs">Delete</a>
+                </div>
               </div>
-              <!-- /. tools -->
+            </li>
+            <!-- END timeline item -->
+            <!-- timeline item -->
+            <li>
+              <i class="fa fa-user bg-aqua"></i>
+
+              <div class="timeline-item">
+                <span class="time"><i class="fa fa-clock-o"></i> 5 mins ago</span>
+
+                <h3 class="timeline-header no-border"><a href="#">Sarah Young</a> accepted your friend request</h3>
+              </div>
+            </li>
+            <!-- END timeline item -->
+            <!-- timeline item -->
+            <li>
+              <i class="fa fa-comments bg-yellow"></i>
+
+              <div class="timeline-item">
+                <span class="time"><i class="fa fa-clock-o"></i> 27 mins ago</span>
+
+                <h3 class="timeline-header"><a href="#">Jay White</a> commented on your post</h3>
+
+                <div class="timeline-body">
+                  Take me to your leader!
+                  Switzerland is small and neutral!
+                  We are more like Germany, ambitious and misunderstood!
+                </div>
+                <div class="timeline-footer">
+                  <a class="btn btn-warning btn-flat btn-xs">View comment</a>
+                </div>
+              </div>
+            </li>
+            <!-- END timeline item -->
+            <!-- timeline time label -->
+            <li class="time-label">
+                  <span class="bg-green">
+                    3 Jan. 2014
+                  </span>
+            </li>
+            <!-- /.timeline-label -->
+            <!-- timeline item -->
+            <li>
+              <i class="fa fa-camera bg-purple"></i>
+
+              <div class="timeline-item">
+                <span class="time"><i class="fa fa-clock-o"></i> 2 days ago</span>
+
+                <h3 class="timeline-header"><a href="#">Mina Lee</a> uploaded new photos</h3>
+
+                <div class="timeline-body">
+                  <img src="http://placehold.it/150x100" alt="..." class="margin">
+                  <img src="http://placehold.it/150x100" alt="..." class="margin">
+                  <img src="http://placehold.it/150x100" alt="..." class="margin">
+                  <img src="http://placehold.it/150x100" alt="..." class="margin">
+                </div>
+              </div>
+            </li>
+            <!-- END timeline item -->
+            <!-- timeline item -->
+            <li>
+              <i class="fa fa-video-camera bg-maroon"></i>
+
+              <div class="timeline-item">
+                <span class="time"><i class="fa fa-clock-o"></i> 5 days ago</span>
+
+                <h3 class="timeline-header"><a href="#">Mr. Doe</a> shared a video</h3>
+
+                <div class="timeline-body">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tMWkeBIohBs"
+                            frameborder="0" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="timeline-footer">
+                  <a href="#" class="btn btn-xs bg-maroon">See comments</a>
+                </div>
+              </div>
+            </li>
+            <!-- END timeline item -->
+            <li>
+              <i class="fa fa-clock-o bg-gray"></i>
+            </li>
+          </ul>
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+
+      <div class="row" style="margin-top: 10px;">
+        <div class="col-md-12">
+          <div class="box box-primary">
+            <div class="box-header">
+              <h3 class="box-title"><i class="fa fa-code"></i> Timeline Markup</h3>
             </div>
-            <!-- /.box-header -->
-            <div class="box-body pad">
-              <form>
-                    <textarea id="editor1" name="editor1" rows="10" cols="80">
-                                            This is my textarea to be replaced with CKEditor.
-                    </textarea>
-              </form>
+            <div class="box-body">
+                  <pre style="font-weight: 600;">
+&lt;ul class="timeline">
+
+    &lt;!-- timeline time label -->
+    &lt;li class="time-label">
+        &lt;span class="bg-red">
+            10 Feb. 2014
+        &lt;/span>
+    &lt;/li>
+    &lt;!-- /.timeline-label -->
+
+    &lt;!-- timeline item -->
+    &lt;li>
+        &lt;!-- timeline icon -->
+        &lt;i class="fa fa-envelope bg-blue">&lt;/i>
+        &lt;div class="timeline-item">
+            &lt;span class="time">&lt;i class="fa fa-clock-o">&lt;/i> 12:05&lt;/span>
+
+            &lt;h3 class="timeline-header">&lt;a href="#">Support Team&lt;/a> ...&lt;/h3>
+
+            &lt;div class="timeline-body">
+                ...
+                Content goes here
+            &lt;/div>
+
+            &lt;div class="timeline-footer">
+                &lt;a class="btn btn-primary btn-xs">...&lt;/a>
+            &lt;/div>
+        &lt;/div>
+    &lt;/li>
+    &lt;!-- END timeline item -->
+
+    ...
+
+&lt;/ul>
+                  </pre>
             </div>
+            <!-- /.box-body -->
           </div>
           <!-- /.box -->
-
-          <div class="box">
-            <div class="box-header">
-              <h3 class="box-title">Bootstrap WYSIHTML5
-                <small>Simple and fast</small>
-              </h3>
-              <!-- tools box -->
-              <div class="pull-right box-tools">
-                <button type="button" class="btn btn-default btn-sm" data-widget="collapse" data-toggle="tooltip"
-                        title="Collapse">
-                  <i class="fa fa-minus"></i></button>
-                <button type="button" class="btn btn-default btn-sm" data-widget="remove" data-toggle="tooltip"
-                        title="Remove">
-                  <i class="fa fa-times"></i></button>
-              </div>
-              <!-- /. tools -->
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body pad">
-              <form>
-                <textarea class="textarea" placeholder="Place some text here"
-                          style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
-              </form>
-            </div>
-          </div>
         </div>
-        <!-- /.col-->
+        <!-- /.col -->
       </div>
-      <!-- ./row -->
+      <!-- /.row -->
+
     </section>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
+
   <footer class="main-footer">
     <div class="pull-right hidden-xs">
       <b>Version</b> 2.4.18
@@ -561,6 +676,7 @@
     <!-- Create the tabs -->
     <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
       <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+
       <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
     </ul>
     <!-- Tab panes -->
