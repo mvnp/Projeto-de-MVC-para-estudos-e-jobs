@@ -5,7 +5,7 @@ class Adminlte extends Controller
 	public function __construct()
 	{
 		parent::__construct();
-		Auth::handleLogin();
+		# Auth::handleLogin();
 		$this->view->js = array('adminlte/js/default.js');
 	}
 
