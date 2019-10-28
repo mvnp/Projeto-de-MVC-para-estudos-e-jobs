@@ -338,8 +338,7 @@
             <li><a href="<?php echo URL ?>adminlte/morris"><i class="fa fa-circle-o"></i> Morris</a></li>
             <li><a href="<?php echo URL ?>adminlte/flot"><i class="fa fa-circle-o"></i> Flot</a></li>
             <li><a href="<?php echo URL ?>adminlte/inline"><i class="fa fa-circle-o"></i> Inline charts</a></li>
-
-            <li><a href="../layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
+            <li><a href="<?php echo URL ?>adminlte/colsidebar"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -415,9 +414,9 @@
             <li><a href="<?php echo URL ?>adminlte/invoice"><i class="fa fa-circle-o"></i> Invoice</a></li>
             <li><a href="<?php echo URL ?>adminlte/profile"><i class="fa fa-circle-o"></i> Profile</a></li>
             <li class="active"><a href="<?php echo URL ?>adminlte/login"><i class="fa fa-circle-o"></i> Login</a></li>
-            <li class="active"><a href="<?php echo URL ?>/adminlte/register"><i class="fa fa-circle-o"></i> Register</a></li>
+            <li><a href="<?php echo URL ?>/adminlte/register"><i class="fa fa-circle-o"></i> Register</a></li>
             <li><a href="<?php echo URL ?>/adminlte/lockscreen"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
-            <li class="active"><a href="404.html"><i class="fa fa-circle-o"></i> 404 Error</a></li>
+            <li><a href="<?php echo URL ?>/adminlte/error404"><i class="fa fa-circle-o"></i> 404 Error</a></li>
             <li><a href="<?php echo URL ?>/adminlte/error500"><i class="fa fa-circle-o"></i> 500 Error</a></li>
             <li><a href="<?php echo URL ?>/adminlte/blank"><i class="fa fa-circle-o"></i> Blank Page</a></li>
             <li><a href="<?php echo URL ?>/adminlte/pace"><i class="fa fa-circle-o"></i> Pace Page</a></li>
@@ -490,7 +489,7 @@
 
           <p>
             We could not find the page you were looking for.
-            Meanwhile, you may <a href="../../index.html">return to dashboard</a> or try using the search form.
+            Meanwhile, you may <a href="<?php echo URL ?>adminlte/index">return to dashboard</a> or try using the search form.
           </p>
 
           <form class="search-form">

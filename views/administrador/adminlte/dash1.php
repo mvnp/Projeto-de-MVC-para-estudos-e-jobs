@@ -321,7 +321,7 @@
           </ul>
         </li>
         <li>
-          <a href="pages/widgets.html">
+          <a href="<?php echo URL ?>adminlte/widgets">
             <i class="fa fa-th"></i> <span>Widgets</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-green">new</small>
@@ -381,13 +381,12 @@
             </span>
           </a>
           <ul class="treeview-menu">
-
             <li><a href="<?php echo URL ?>adminlte/form1"><i class="fa fa-circle-o"></i> Simple tables</a></li>
             <li><a href="<?php echo URL ?>adminlte/form2"><i class="fa fa-circle-o"></i> Data tables</a></li>
           </ul>
         </li>
         <li>
-          <a href="pages/calendar.html">
+          <a href="<?php echo URL ?>adminlte/calendar">
             <i class="fa fa-calendar"></i> <span>Calendar</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-red">3</small>
@@ -417,7 +416,7 @@
             <li><a href="<?php echo URL ?>adminlte/profile"><i class="fa fa-circle-o"></i> Profile</a></li>
             <li><a href="<?php echo URL ?>adminlte/login"><i class="fa fa-circle-o"></i> Login</a></li>
             <li><a href="<?php echo URL ?>adminlte/register"><i class="fa fa-circle-o"></i> Register</a></li>
-           <li><a href="<?php echo URL ?>adminlte/lockscreen"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
+            <li><a href="<?php echo URL ?>adminlte/lockscreen"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
             <li><a href="<?php echo URL ?>adminlte/error404"><i class="fa fa-circle-o"></i> 404 Error</a></li>
             <li><a href="<?php echo URL ?>adminlte/error500"><i class="fa fa-circle-o"></i> 500 Error</a></li>
             <li><a href="<?php echo URL ?>adminlte/blank"><i class="fa fa-circle-o"></i> Blank Page</a></li>
@@ -613,7 +612,6 @@
               <!-- chat item -->
               <div class="item">
                 <img src="<?php echo PUBLIC_URL ?>img/user3-128x128.jpg" alt="user image" class="offline">
-
                 <p class="message">
                   <a href="#" class="name">
                     <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 5:15</small>

@@ -339,7 +339,6 @@
             <li><a href="<?php echo URL ?>adminlte/morris"><i class="fa fa-circle-o"></i> Morris</a></li>
             <li><a href="<?php echo URL ?>adminlte/flot"><i class="fa fa-circle-o"></i> Flot</a></li>
             <li><a href="<?php echo URL ?>adminlte/inline"><i class="fa fa-circle-o"></i> Inline charts</a></li>
-
           </ul>
         </li>
         <li class="treeview">
@@ -351,10 +350,10 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../UI/general.html"><i class="fa fa-circle-o"></i> General</a></li>
-            <li><a href="../UI/icons.html"><i class="fa fa-circle-o"></i> Icons</a></li>
-            <li><a href="../UI/buttons.html"><i class="fa fa-circle-o"></i> Buttons</a></li>
-            <li><a href="../UI/sliders.html"><i class="fa fa-circle-o"></i> Sliders</a></li>
+            <li><a href="<?php echo URL ?>adminlte/general"><i class="fa fa-circle-o"></i> General</a></li>
+            <li><a href="<?php echo URL ?>adminlte/icons"><i class="fa fa-circle-o"></i> Icons</a></li>
+            <li><a href="<?php echo URL ?>adminlte/buttons"><i class="fa fa-circle-o"></i> Buttons</a></li>
+            <li><a href="<?php echo URL ?>adminlte/sliders"><i class="fa fa-circle-o"></i> Sliders</a></li>
             <li><a href="<?php echo URL ?>adminlte/modals"><i class="fa fa-circle-o"></i> Modals</a></li>
           </ul>
         </li>
@@ -410,10 +409,10 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="invoice.html"><i class="fa fa-circle-o"></i> Invoice</a></li>
+            <li class="active"><a href="<?php echo URL ?>adminlte/invoice"><i class="fa fa-circle-o"></i> Invoice</a></li>
             <li><a href="<?php echo URL ?>adminlte/profile"><i class="fa fa-circle-o"></i> Profile</a></li>
-            <li class="active"><a href="<?php echo URL ?>adminlte/login"><i class="fa fa-circle-o"></i> Login</a></li>
-            <li class="active"><a href="<?php echo URL ?>/adminlte/register"><i class="fa fa-circle-o"></i> Register</a></li>
+            <li><a href="<?php echo URL ?>adminlte/login"><i class="fa fa-circle-o"></i> Login</a></li>
+            <li><a href="<?php echo URL ?>/adminlte/register"><i class="fa fa-circle-o"></i> Register</a></li>
             <li><a href="<?php echo URL ?>/adminlte/lockscreen"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
             <li><a href="<?php echo URL ?>/adminlte/error404"><i class="fa fa-circle-o"></i> 404 Error</a></li>
             <li><a href="<?php echo URL ?>/adminlte/error500"><i class="fa fa-circle-o"></i> 500 Error</a></li>
@@ -628,7 +627,7 @@
       <!-- this row will not appear when printing -->
       <div class="row no-print">
         <div class="col-xs-12">
-          <a href="invoice-print.html" target="_blank" class="btn btn-default"><i class="fa fa-print"></i> Print</a>
+          <a href="<?php echo URL ?>adminlte/invoiceprint" target="_blank" class="btn btn-default"><i class="fa fa-print"></i> Print</a>
           <button type="button" class="btn btn-success pull-right"><i class="fa fa-credit-card"></i> Submit Payment
           </button>
           <button type="button" class="btn btn-primary pull-right" style="margin-right: 5px;">

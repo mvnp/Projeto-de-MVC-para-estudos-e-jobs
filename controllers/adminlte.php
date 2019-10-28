@@ -182,4 +182,22 @@ class Adminlte extends Controller
 		$this->view->title = "Administrador | MVC System";
 		$this->view->render("adminlte/modals", false, true);
 	}
+
+	public function morris()
+	{
+		$this->view->title = "Administrador | MVC System";
+		$this->view->render("adminlte/morris", false, true);
+	}
+
+	public function flot()
+	{
+		$this->view->title = "Administrador | MVC System";
+		$this->view->render("adminlte/flot", false, true);
+	}
+
+	public function inline()
+	{
+		$this->view->title = "Administrador | MVC System";
+		$this->view->render("adminlte/inline", false, true);
+	}
 }

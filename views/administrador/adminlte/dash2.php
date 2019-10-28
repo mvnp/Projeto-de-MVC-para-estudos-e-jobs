@@ -325,7 +325,7 @@
           </ul>
         </li>
         <li>
-          <a href="pages/widgets.html">
+          <a href="<?php echo URL ?>adminlte/widgets">
             <i class="fa fa-th"></i> <span>Widgets</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-green">new</small>
@@ -391,7 +391,7 @@
           </ul>
         </li>
         <li>
-          <a href="pages/calendar.html">
+          <a href="<?php echo URL ?>adminlte/calendar">
             <i class="fa fa-calendar"></i> <span>Calendar</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-red">3</small>

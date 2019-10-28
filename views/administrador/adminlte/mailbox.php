@@ -298,8 +298,8 @@
                 </span>
               </a>
             </li>
-            <li><a href="compose.html">Compose</a></li>
-            <li><a href="read-mail.html">Read</a></li>
+            <li><a href="<?php echo URL ?>adminlte/compose">Compose</a></li>
+            <li><a href="<?php echo URL ?>adminlte/readmail">Read</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -382,7 +382,7 @@
     <section class="content">
       <div class="row">
         <div class="col-md-3">
-          <a href="compose.html" class="btn btn-primary btn-block margin-bottom">Compose</a>
+          <a href="<?php echo URL ?>adminlte/compose" class="btn btn-primary btn-block margin-bottom">Compose</a>
 
           <div class="box box-solid">
             <div class="box-header with-border">

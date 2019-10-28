@@ -125,6 +125,7 @@
                       <i class="fa fa-users text-red"></i> 5 new members joined
                     </a>
                   </li>
+
                   <li>
                     <a href="#">
                       <i class="fa fa-shopping-cart text-green"></i> 25 sales made
@@ -300,8 +301,9 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo URL ?>adminlte/dash1"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-            <li><a href="<?php echo URL ?>adminlte/dash2"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>          </ul>
+            <li><a href="<?php echo URL  ?>adminlte/dash1"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
+            <li><a href="<?php echo URL  ?>adminlte/dash2"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+          </ul>
         </li>
         <li class="treeview">
           <a href="#">
@@ -312,10 +314,10 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo URL ?>adminlte/top-nav"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
+            <li><a href="<?php echo URL ?>adminlte/topnav"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
             <li><a href="<?php echo URL ?>adminlte/boxed"><i class="fa fa-circle-o"></i> Boxed</a></li>
             <li><a href="<?php echo URL ?>adminlte/fixed"><i class="fa fa-circle-o"></i> Fixed</a></li>
-            <li><a href="<?php echo URL ?>adminlte/collapsed-sidebar"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
+            <li><a href="<?php echo URL ?>adminlte/colsidebar"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
           </ul>
         </li>
         <li>
@@ -326,7 +328,7 @@
             </span>
           </a>
         </li>
-        <li class="treeview">
+        <li class="treeview active">
           <a href="#">
             <i class="fa fa-pie-chart"></i>
             <span>Charts</span>
@@ -339,7 +341,6 @@
             <li><a href="<?php echo URL ?>adminlte/morris"><i class="fa fa-circle-o"></i> Morris</a></li>
             <li><a href="<?php echo URL ?>adminlte/flot"><i class="fa fa-circle-o"></i> Flot</a></li>
             <li><a href="<?php echo URL ?>adminlte/inline"><i class="fa fa-circle-o"></i> Inline charts</a></li>
-
           </ul>
         </li>
         <li class="treeview">
@@ -356,7 +357,6 @@
             <li><a href="<?php echo URL ?>adminlte/buttons"><i class="fa fa-circle-o"></i> Buttons</a></li>
             <li><a href="<?php echo URL ?>adminlte/sliders"><i class="fa fa-circle-o"></i> Sliders</a></li>
             <li><a href="<?php echo URL ?>adminlte/timeline"><i class="fa fa-circle-o"></i> Timeline</a></li>
-
             <li><a href="<?php echo URL ?>adminlte/modals"><i class="fa fa-circle-o"></i> Modals</a></li>
           </ul>
         </li>
@@ -381,8 +381,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo URL ?>adminlte/tabela1"><i class="fa fa-circle-o"></i> Simple tables</a></li>
-            <li><a href="<?php echo URL ?>adminlte/tabela2"><i class="fa fa-circle-o"></i> Data tables</a></li>
+            <li><a href="<?php echo URL ?>adminlte/form1"><i class="fa fa-circle-o"></i> Simple tables</a></li>
+            <li><a href="<?php echo URL ?>adminlte/form2"><i class="fa fa-circle-o"></i> Data tables</a></li>
           </ul>
         </li>
         <li>
@@ -404,7 +404,7 @@
             </span>
           </a>
         </li>
-        <li class="treeview active">
+        <li class="treeview">
           <a href="#">
             <i class="fa fa-folder"></i> <span>Examples</span>
             <span class="pull-right-container">
@@ -415,12 +415,12 @@
             <li><a href="<?php echo URL ?>adminlte/invoice"><i class="fa fa-circle-o"></i> Invoice</a></li>
             <li><a href="<?php echo URL ?>adminlte/profile"><i class="fa fa-circle-o"></i> Profile</a></li>
             <li><a href="<?php echo URL ?>adminlte/login"><i class="fa fa-circle-o"></i> Login</a></li>
-            <li><a href="<?php echo URL ?>/adminlte/register"><i class="fa fa-circle-o"></i> Register</a></li>
-            <li><a href="<?php echo URL ?>/adminlte/lockscreen"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
-            <li><a href="<?php echo URL ?>/adminlte/error404"><i class="fa fa-circle-o"></i> 404 Error</a></li>
+            <li><a href="<?php echo URL ?>adminlte/register"><i class="fa fa-circle-o"></i> Register</a></li>
+            <li><a href="<?php echo URL ?>adminlte/lockscreen"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
+            <li><a href="<?php echo URL ?>adminlte/error404"><i class="fa fa-circle-o"></i> 404 Error</a></li>
             <li><a href="<?php echo URL ?>adminlte/error500"><i class="fa fa-circle-o"></i> 500 Error</a></li>
-            <li class="active"><a href="<?php echo URL ?>/adminlte/blank"><i class="fa fa-circle-o"></i> Blank Page</a></li>
-            <li><a href="<?php echo URL ?>/adminlte/pace"><i class="fa fa-circle-o"></i> Pace Page</a></li>
+            <li><a href="<?php echo URL ?>adminlte/blank"><i class="fa fa-circle-o"></i> Blank Page</a></li>
+            <li><a href="<?php echo URL ?>adminlte/pace"><i class="fa fa-circle-o"></i> Pace Page</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -471,43 +471,372 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        500 Error Page
+        Inline Charts
+        <small>multiple types of charts</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="#">Examples</a></li>
-        <li class="active">500 error</li>
+        <li><a href="#">Charts</a></li>
+        <li class="active">Inline Charts</li>
       </ol>
     </section>
 
     <!-- Main content -->
     <section class="content">
 
-      <div class="error-page">
-        <h2 class="headline text-red">500</h2>
+      <!-- row -->
+      <div class="row">
+        <div class="col-xs-12">
+          <!-- jQuery Knob -->
+          <div class="box box-solid">
+            <div class="box-header">
+              <i class="fa fa-bar-chart-o"></i>
 
-        <div class="error-content">
-          <h3><i class="fa fa-warning text-red"></i> Oops! Something went wrong.</h3>
+              <h3 class="box-title">jQuery Knob</h3>
 
-          <p>
-            We will work on fixing that right away.
-            Meanwhile, you may <a href="<?php echo URL ?>adminlte/index">return to dashboard</a> or try using the search form.
-          </p>
-
-          <form class="search-form">
-            <div class="input-group">
-              <input type="text" name="search" class="form-control" placeholder="Search">
-
-              <div class="input-group-btn">
-                <button type="submit" name="submit" class="btn btn-danger btn-flat"><i class="fa fa-search"></i>
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-default btn-sm" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-default btn-sm" data-widget="remove"><i class="fa fa-times"></i>
                 </button>
               </div>
             </div>
-            <!-- /.input-group -->
-          </form>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <div class="row">
+                <div class="col-xs-6 col-md-3 text-center">
+                  <input type="text" class="knob" value="30" data-width="90" data-height="90" data-fgColor="#3c8dbc">
+
+                  <div class="knob-label">New Visitors</div>
+                </div>
+                <!-- ./col -->
+                <div class="col-xs-6 col-md-3 text-center">
+                  <input type="text" class="knob" value="70" data-width="90" data-height="90" data-fgColor="#f56954">
+
+                  <div class="knob-label">Bounce Rate</div>
+                </div>
+                <!-- ./col -->
+                <div class="col-xs-6 col-md-3 text-center">
+                  <input type="text" class="knob" value="-80" data-min="-150" data-max="150" data-width="90" data-height="90" data-fgColor="#00a65a">
+
+                  <div class="knob-label">Server Load</div>
+                </div>
+                <!-- ./col -->
+                <div class="col-xs-6 col-md-3 text-center">
+                  <input type="text" class="knob" value="40" data-width="90" data-height="90" data-fgColor="#00c0ef">
+
+                  <div class="knob-label">Disk Space</div>
+                </div>
+                <!-- ./col -->
+              </div>
+              <!-- /.row -->
+
+              <div class="row">
+                <div class="col-xs-6 text-center">
+                  <input type="text" class="knob" value="90" data-width="90" data-height="90" data-fgColor="#932ab6">
+
+                  <div class="knob-label">Bandwidth</div>
+                </div>
+                <!-- ./col -->
+                <div class="col-xs-6 text-center">
+                  <input type="text" class="knob" value="50" data-width="90" data-height="90" data-fgColor="#39CCCC">
+
+                  <div class="knob-label">CPU</div>
+                </div>
+                <!-- ./col -->
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
         </div>
+        <!-- /.col -->
       </div>
-      <!-- /.error-page -->
+      <!-- /.row -->
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="box box-solid">
+            <div class="box-header">
+              <i class="fa fa-bar-chart-o"></i>
+
+              <h3 class="box-title">jQuery Knob Different Sizes</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-default btn-sm" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-default btn-sm" data-widget="remove"><i class="fa fa-times"></i>
+                </button>
+              </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <div class="row">
+                <div class="col-xs-6 col-md-3 text-center">
+                  <input type="text" class="knob" value="30" data-width="90" data-height="90" data-fgColor="#3c8dbc" data-readonly="true">
+
+                  <div class="knob-label">data-width="90"</div>
+                </div>
+                <!-- ./col -->
+                <div class="col-xs-6 col-md-3 text-center">
+                  <input type="text" class="knob" value="30" data-width="120" data-height="120" data-fgColor="#f56954">
+
+                  <div class="knob-label">data-width="120"</div>
+                </div>
+                <!-- ./col -->
+                <div class="col-xs-6 col-md-3 text-center">
+                  <input type="text" class="knob" value="30" data-thickness="0.1" data-width="90" data-height="90" data-fgColor="#00a65a">
+
+                  <div class="knob-label">data-thickness="0.1"</div>
+                </div>
+                <!-- ./col -->
+                <div class="col-xs-6 col-md-3 text-center">
+                  <input type="text" class="knob" data-thickness="0.2" data-angleArc="250" data-angleOffset="-125" value="30" data-width="120" data-height="120" data-fgColor="#00c0ef">
+
+                  <div class="knob-label">data-angleArc="250"</div>
+                </div>
+                <!-- ./col -->
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="box box-solid">
+            <div class="box-header">
+              <i class="fa fa-bar-chart-o"></i>
+              <h3 class="box-title">jQuery Knob Tron Style</h3>
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-default btn-sm" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-default btn-sm" data-widget="remove"><i class="fa fa-times"></i>
+                </button>
+              </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <div class="row">
+                <div class="col-xs-6 col-md-3 text-center">
+                  <input type="text" class="knob" value="80" data-skin="tron" data-thickness="0.2" data-width="90" data-height="90" data-fgColor="#3c8dbc" data-readonly="true">
+
+                  <div class="knob-label">data-width="90"</div>
+                </div>
+                <!-- ./col -->
+                <div class="col-xs-6 col-md-3 text-center">
+                  <input type="text" class="knob" value="60" data-skin="tron" data-thickness="0.2" data-width="120" data-height="120" data-fgColor="#f56954">
+
+                  <div class="knob-label">data-width="120"</div>
+                </div>
+                <!-- ./col -->
+                <div class="col-xs-6 col-md-3 text-center">
+                  <input type="text" class="knob" value="10" data-skin="tron" data-thickness="0.1" data-width="90" data-height="90" data-fgColor="#00a65a">
+
+                  <div class="knob-label">data-thickness="0.1"</div>
+                </div>
+                <!-- ./col -->
+                <div class="col-xs-6 col-md-3 text-center">
+                  <input type="text" class="knob" value="100" data-skin="tron" data-thickness="0.2" data-angleArc="250" data-angleOffset="-125" data-width="120" data-height="120" data-fgColor="#00c0ef">
+
+                  <div class="knob-label">data-angleArc="250"</div>
+                </div>
+                <!-- ./col -->
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+
+      <!-- callout -->
+      <div class="callout callout-info">
+        <h4>The following was created using data tags</h4>
+
+        <p>The following three inline (sparkline) chart have been initialized to read and interpret data tags</p>
+      </div>
+      <!-- /.callout -->
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="box box-solid">
+            <div class="box-header">
+              <h3 class="box-title text-danger">Sparkline Pie</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-default btn-sm"><i class="fa fa-refresh"></i></button>
+              </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body text-center">
+              <div class="sparkline" data-type="pie" data-offset="90" data-width="100px" data-height="100px">
+                6,4,8
+              </div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+
+        <div class="col-md-4">
+          <div class="box box-solid">
+            <div class="box-header">
+              <h3 class="box-title text-blue">Sparkline line</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-default btn-sm"><i class="fa fa-refresh"></i></button>
+              </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body text-center">
+              <div class="sparkline" data-type="line" data-spot-Radius="3" data-highlight-Spot-Color="#f39c12" data-highlight-Line-Color="#222" data-min-Spot-Color="#f56954" data-max-Spot-Color="#00a65a" data-spot-Color="#39CCCC" data-offset="90" data-width="100%" data-height="100px" data-line-Width="2" data-line-Color="#39CCCC" data-fill-Color="rgba(57, 204, 204, 0.08)">
+                6,4,7,8,4,3,2,2,5,6,7,4,1,5,7,9,9,8,7,6
+              </div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+
+        <div class="col-md-4">
+          <div class="box box-solid">
+            <div class="box-header">
+              <h3 class="box-title text-warning">Sparkline Bar</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-default btn-sm"><i class="fa fa-refresh"></i></button>
+              </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body text-center">
+              <div class="sparkline" data-type="bar" data-width="97%" data-height="100px" data-bar-Width="14" data-bar-Spacing="7" data-bar-Color="#f39c12">
+                6,4,8, 9, 10, 5, 13, 18, 21, 7, 9
+              </div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="box box-solid">
+            <div class="box-header">
+              <h3 class="box-title">Sparkline examples</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-default btn-sm" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-default btn-sm" data-widget="remove"><i class="fa fa-times"></i>
+                </button>
+              </div>
+            </div>
+            <!-- /.box-header -->
+            <div id="myBody" class="box-body">
+              <div class="row">
+                <div class="col-sm-6">
+                  <p>
+                    Mouse speed <span id="mousespeed">Loading..</span>
+                  </p>
+
+                  <p>
+                    Inline <span class="sparkline-1">10,8,9,3,5,8,5</span>
+                    line graphs
+                    <span class="sparkline-1">8,4,0,0,0,0,1,4,4,10,10,10,10,0,0,0,4,6,5,9,10</span>
+                  </p>
+
+                  <p>
+                    Bar charts <span class="sparkbar">10,8,9,3,5,8,5</span>
+                    negative values: <span class="sparkbar">-3,1,2,0,3,-1</span>
+                    stacked: <span class="sparkbar">0:2,2:4,4:2,4:1</span>
+                  </p>
+
+                  <p>
+                    Composite inline
+                    <span id="compositeline">8,4,0,0,0,0,1,4,4,10,10,10,10,0,0,0,4,6,5,9,10</span>
+                  </p>
+
+                  <p>
+                    Inline with normal range
+                    <span id="normalline">8,4,0,0,0,0,1,4,4,10,10,10,10,0,0,0,4,6,5,9,10</span>
+                  </p>
+
+                  <p>
+                    Composite bar
+                    <span id="compositebar">4,6,7,7,4,3,2,1,4</span>
+                  </p>
+
+                  <p>
+                    Discrete
+                    <span class="discrete1">4,6,7,7,4,3,2,1,4,4,5,6,7,6,6,2,4,5</span><br>
+
+                    Discrete with threshold
+                    <span id="discrete2">4,6,7,7,4,3,2,1,4</span>
+                  </p>
+
+                  <p>
+                    Bullet charts<br>
+                    <span class="sparkbullet">10,12,12,9,7</span><br>
+                    <span class="sparkbullet">14,12,12,9,7</span><br>
+                    <span class="sparkbullet">10,12,14,9,7</span><br>
+                  </p>
+                </div>
+                <!-- /.col -->
+                <div class="col-sm-6">
+                  <p>
+                    Customize size and colours
+                    <span id="linecustom">10,8,9,3,5,8,5,7</span>
+                  </p>
+
+                  <p>
+                    Tristate charts
+                    <span class="sparktristate">1,1,0,1,-1,-1,1,-1,0,0,1,1</span><br>
+                    (think games won, lost or drawn)
+                  </p>
+
+                  <p>
+                    Tristate chart using a colour map:
+                    <span class="sparktristatecols">1,2,0,2,-1,-2,1,-2,0,0,1,1</span>
+                  </p>
+
+                  <p>
+                    Box Plot: <span class="sparkboxplot">4,27,34,52,54,59,61,68,78,82,85,87,91,93,100</span><br>
+                    Pre-computed box plot <span class="sparkboxplotraw">Loading..</span>
+                  </p>
+
+                  <p>
+                    Pie charts
+                    <span class="sparkpie">1,1,2</span>
+                    <span class="sparkpie">1,5</span>
+                    <span class="sparkpie">20,50,80</span>
+                  </p>
+                </div>
+                <!-- /.col -->
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
 
     </section>
     <!-- /.content -->

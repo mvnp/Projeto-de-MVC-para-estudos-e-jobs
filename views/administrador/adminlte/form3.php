@@ -302,7 +302,8 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="<?php echo URL ?>adminlte/dash1"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-            <li><a href="<?php echo URL ?>adminlte/dash2"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>          </ul>
+            <li><a href="<?php echo URL ?>adminlte/dash2"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+          </ul>
         </li>
         <li class="treeview">
           <a href="#">
@@ -357,7 +358,6 @@
             <li><a href="<?php echo URL ?>adminlte/buttons"><i class="fa fa-circle-o"></i> Buttons</a></li>
             <li><a href="<?php echo URL ?>adminlte/sliders"><i class="fa fa-circle-o"></i> Sliders</a></li>
             <li><a href="<?php echo URL ?>adminlte/timeline"><i class="fa fa-circle-o"></i> Timeline</a></li>
-
             <li><a href="<?php echo URL ?>adminlte/modals"><i class="fa fa-circle-o"></i> Modals</a></li>
           </ul>
         </li>
@@ -369,9 +369,9 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="general.html"><i class="fa fa-circle-o"></i> General Elements</a></li>
-            <li><a href="advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
-            <li class="active"><a href="<?php echo URL ?>adminlte/form3"><i class="fa fa-circle-o"></i> Editors</a></li>
+            <li class="active"><a href="<?php echo URL ?>adminlte/form1"><i class="fa fa-circle-o"></i> General Elements</a></li>
+            <li><a href="<?php echo URL ?>adminlte/form2"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
+            <li><a href="<?php echo URL ?>adminlte/form3"><i class="fa fa-circle-o"></i> Editors</a></li>
           </ul>
         </li>
         <li class="treeview">

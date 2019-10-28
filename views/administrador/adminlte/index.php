@@ -302,7 +302,7 @@
           </a>
           <ul class="treeview-menu">
             <li class="active"><a href="<?php echo URL ?>adminlte/index"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-            <li><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+            <li><a href="<?php echo URL ?>adminlte/dash2"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -321,7 +321,7 @@
           </ul>
         </li>
         <li>
-          <a href="pages/widgets.html">
+          <a href="<?php echo URL ?>adminlte/widgets">
             <i class="fa fa-th"></i> <span>Widgets</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-green">new</small>
@@ -387,7 +387,7 @@
           </ul>
         </li>
         <li>
-          <a href="pages/calendar.html">
+          <a href="<?php echo URL ?>adminlte/calendar">
             <i class="fa fa-calendar"></i> <span>Calendar</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-red">3</small>

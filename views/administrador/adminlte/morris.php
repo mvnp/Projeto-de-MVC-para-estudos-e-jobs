@@ -301,7 +301,8 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="<?php echo URL ?>adminlte/dash1"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-            <li><a href="<?php echo URL ?>adminlte/dash2"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>          </ul>
+            <li><a href="<?php echo URL ?>adminlte/dash2"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+          </ul>
         </li>
         <li class="treeview">
           <a href="#">
@@ -312,10 +313,10 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo URL ?>adminlte/top-nav"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
+            <li><a href="<?php echo URL ?>adminlte/topnav"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
             <li><a href="<?php echo URL ?>adminlte/boxed"><i class="fa fa-circle-o"></i> Boxed</a></li>
             <li><a href="<?php echo URL ?>adminlte/fixed"><i class="fa fa-circle-o"></i> Fixed</a></li>
-            <li><a href="<?php echo URL ?>adminlte/collapsed-sidebar"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
+            <li><a href="<?php echo URL ?>adminlte/colsidebar"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
           </ul>
         </li>
         <li>
@@ -326,7 +327,7 @@
             </span>
           </a>
         </li>
-        <li class="treeview">
+        <li class="treeview active">
           <a href="#">
             <i class="fa fa-pie-chart"></i>
             <span>Charts</span>
@@ -339,7 +340,6 @@
             <li><a href="<?php echo URL ?>adminlte/morris"><i class="fa fa-circle-o"></i> Morris</a></li>
             <li><a href="<?php echo URL ?>adminlte/flot"><i class="fa fa-circle-o"></i> Flot</a></li>
             <li><a href="<?php echo URL ?>adminlte/inline"><i class="fa fa-circle-o"></i> Inline charts</a></li>
-
           </ul>
         </li>
         <li class="treeview">
@@ -356,7 +356,6 @@
             <li><a href="<?php echo URL ?>adminlte/buttons"><i class="fa fa-circle-o"></i> Buttons</a></li>
             <li><a href="<?php echo URL ?>adminlte/sliders"><i class="fa fa-circle-o"></i> Sliders</a></li>
             <li><a href="<?php echo URL ?>adminlte/timeline"><i class="fa fa-circle-o"></i> Timeline</a></li>
-
             <li><a href="<?php echo URL ?>adminlte/modals"><i class="fa fa-circle-o"></i> Modals</a></li>
           </ul>
         </li>
@@ -381,8 +380,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo URL ?>adminlte/tabela1"><i class="fa fa-circle-o"></i> Simple tables</a></li>
-            <li><a href="<?php echo URL ?>adminlte/tabela2"><i class="fa fa-circle-o"></i> Data tables</a></li>
+            <li><a href="<?php echo URL ?>adminlte/form1"><i class="fa fa-circle-o"></i> Simple tables</a></li>
+            <li><a href="<?php echo URL ?>adminlte/form2"><i class="fa fa-circle-o"></i> Data tables</a></li>
           </ul>
         </li>
         <li>
@@ -404,7 +403,7 @@
             </span>
           </a>
         </li>
-        <li class="treeview active">
+        <li class="treeview">
           <a href="#">
             <i class="fa fa-folder"></i> <span>Examples</span>
             <span class="pull-right-container">
@@ -415,12 +414,12 @@
             <li><a href="<?php echo URL ?>adminlte/invoice"><i class="fa fa-circle-o"></i> Invoice</a></li>
             <li><a href="<?php echo URL ?>adminlte/profile"><i class="fa fa-circle-o"></i> Profile</a></li>
             <li><a href="<?php echo URL ?>adminlte/login"><i class="fa fa-circle-o"></i> Login</a></li>
-            <li><a href="<?php echo URL ?>/adminlte/register"><i class="fa fa-circle-o"></i> Register</a></li>
-            <li><a href="<?php echo URL ?>/adminlte/lockscreen"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
-            <li><a href="<?php echo URL ?>/adminlte/error404"><i class="fa fa-circle-o"></i> 404 Error</a></li>
+            <li><a href="<?php echo URL ?>adminlte/register"><i class="fa fa-circle-o"></i> Register</a></li>
+            <li><a href="<?php echo URL ?>adminlte/lockscreen"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
+            <li><a href="<?php echo URL ?>adminlte/error404"><i class="fa fa-circle-o"></i> 404 Error</a></li>
             <li><a href="<?php echo URL ?>adminlte/error500"><i class="fa fa-circle-o"></i> 500 Error</a></li>
-            <li class="active"><a href="<?php echo URL ?>/adminlte/blank"><i class="fa fa-circle-o"></i> Blank Page</a></li>
-            <li><a href="<?php echo URL ?>/adminlte/pace"><i class="fa fa-circle-o"></i> Pace Page</a></li>
+            <li><a href="<?php echo URL ?>adminlte/blank"><i class="fa fa-circle-o"></i> Blank Page</a></li>
+            <li><a href="<?php echo URL ?>adminlte/pace"><i class="fa fa-circle-o"></i> Pace Page</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -471,43 +470,105 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        500 Error Page
+        Morris Charts
+        <small>Preview sample</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="#">Examples</a></li>
-        <li class="active">500 error</li>
+        <li><a href="#">Charts</a></li>
+        <li class="active">Morris</li>
       </ol>
     </section>
 
     <!-- Main content -->
     <section class="content">
+      <div class="callout callout-warning">
+        <h4>Warning!</h4>
 
-      <div class="error-page">
-        <h2 class="headline text-red">500</h2>
+        <p><b>Morris.js</b> charts are no longer maintained by its author. We would recommend using any of the other
+          charts that come with the template.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <!-- AREA CHART -->
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Area Chart</h3>
 
-        <div class="error-content">
-          <h3><i class="fa fa-warning text-red"></i> Oops! Something went wrong.</h3>
-
-          <p>
-            We will work on fixing that right away.
-            Meanwhile, you may <a href="<?php echo URL ?>adminlte/index">return to dashboard</a> or try using the search form.
-          </p>
-
-          <form class="search-form">
-            <div class="input-group">
-              <input type="text" name="search" class="form-control" placeholder="Search">
-
-              <div class="input-group-btn">
-                <button type="submit" name="submit" class="btn btn-danger btn-flat"><i class="fa fa-search"></i>
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                 </button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
               </div>
             </div>
-            <!-- /.input-group -->
-          </form>
+            <div class="box-body chart-responsive">
+              <div class="chart" id="revenue-chart" style="height: 300px;"></div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+          <!-- DONUT CHART -->
+          <div class="box box-danger">
+            <div class="box-header with-border">
+              <h3 class="box-title">Donut Chart</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+              </div>
+            </div>
+            <div class="box-body chart-responsive">
+              <div class="chart" id="sales-chart" style="height: 300px; position: relative;"></div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
         </div>
+        <!-- /.col (LEFT) -->
+        <div class="col-md-6">
+          <!-- LINE CHART -->
+          <div class="box box-info">
+            <div class="box-header with-border">
+              <h3 class="box-title">Line Chart</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+              </div>
+            </div>
+            <div class="box-body chart-responsive">
+              <div class="chart" id="line-chart" style="height: 300px;"></div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+          <!-- BAR CHART -->
+          <div class="box box-success">
+            <div class="box-header with-border">
+              <h3 class="box-title">Bar Chart</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+              </div>
+            </div>
+            <div class="box-body chart-responsive">
+              <div class="chart" id="bar-chart" style="height: 300px;"></div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+        </div>
+        <!-- /.col (RIGHT) -->
       </div>
-      <!-- /.error-page -->
+      <!-- /.row -->
 
     </section>
     <!-- /.content -->

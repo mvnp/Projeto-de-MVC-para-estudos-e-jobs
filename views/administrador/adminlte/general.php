@@ -352,8 +352,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="general.html"><i class="fa fa-circle-o"></i> General</a></li>
-            <li><a href="<?php echo URL ?>icons"><i class="fa fa-circle-o"></i> Icons</a></li>
+            <li class="active"><a href="<?php echo URL ?>adminlte/general"><i class="fa fa-circle-o"></i> General</a></li>
+            <li><a href="<?php echo URL ?>adminlte/icons"><i class="fa fa-circle-o"></i> Icons</a></li>
             <li><a href="<?php echo URL ?>adminlte/buttons"><i class="fa fa-circle-o"></i> Buttons</a></li>
             <li><a href="<?php echo URL ?>adminlte/sliders"><i class="fa fa-circle-o"></i> Sliders</a></li>
             <li><a href="<?php echo URL ?>adminlte/timeline"><i class="fa fa-circle-o"></i> Timeline</a></li>
