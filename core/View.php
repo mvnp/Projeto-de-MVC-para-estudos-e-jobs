@@ -4,25 +4,19 @@ class View
 {
 	public function __construct(){}
 
-	public function render($name, $noInclude = false)
+	public function render($name, $noInclude = false, $admin = false)
 	{
 		if($noInclude == true){
 			require 'views/' . $name . '.php';
+		} elseif($admin == true) {
+	 		require 'views/administrador/header-admin.php';
+				require 'views/administrador/' . $name . '.php';
+			require 'views/administrador/footer-admin.php';
+
 		} else {
 	 		require 'views/header.php';
 				require 'views/' . $name . '.php';
 			require 'views/footer.php';
 		}
-	}
-
-/**
- * Another render views type/mode
- * @return $this->view->renderAdv('header')
- *    @return $this->view->renderAdv('homepage')
- * @return $this->view->renderAdv('fotter')
- */
-	public function renderAdv($name, $noInclude = false)
-	{
-		require 'views/' . $name . '.php';
 	}
 }
