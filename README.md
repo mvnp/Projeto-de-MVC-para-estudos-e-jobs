@@ -1,5 +1,9 @@
 # Yeti! Framework
 
+## UPDATE
+Todas as views do adminlte podem ser acessadas para modificação no diretório abaixo e o controller que faz gestão dessas views é o Adminlte.php na pasta Controllers
+- views/administrador/adminlte
+
 É requisito trabalhar e enviar pull requests na banch **dev**
 
 ## Olá a todos! Feliz por estarem aqui!
