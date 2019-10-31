@@ -39,6 +39,14 @@
 <script src="<?php echo PUBLIC_URL ?>js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="<?php echo PUBLIC_URL ?>js/demo.js"></script>
+<!-- Mascara javascript para inputs	 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+<!-- Chamando script de forma dinâmica -->
+<?php if(isset($this->js)): ?>
+	<?php foreach ($this->js as $js): ?>
+		<?php echo '<script type="text/javascript" src="'.URL.'views/administrador/'.$js.'"></script>'; ?>
+	<?php endforeach; ?>
+<?php endif; ?>
 <script>
 	$(function () 
 	{

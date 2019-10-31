@@ -1,9 +1,10 @@
-<?php 
+<?php
+namespace Models;
 
 /**
  * Class User_Model
  */
-class Note_Model extends Model
+class Note_Model extends \App\Model
 {	
 	public function __construct()
 	{

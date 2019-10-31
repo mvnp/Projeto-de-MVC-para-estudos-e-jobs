@@ -1,6 +1,7 @@
 <?php
+namespace Controllers;
 
-class Login extends Controller
+class Login extends \App\Controller
 {
 	public function __construct()
 	{

@@ -1,0 +1,20 @@
+{
+	"name": "axitech/palhoca",
+	"description": "Guia Comercial e Aplicativo Palhoça",
+	"minimum-stability": "dev",
+	"license": "proprietary",
+	"authors": [
+	{
+	  "name": "Marcos Vinicius Nascimento Pereira",
+	  "email": "contato@palhocasites.com.br"
+	}
+	],
+    "autoload": {
+        "psr-4": {
+            "App\\": "core/",
+            "Models\\": "models/",
+            "Controllers\\": "controllers/",
+            "Utils\\": "utils/"
+        }
+    }
+}

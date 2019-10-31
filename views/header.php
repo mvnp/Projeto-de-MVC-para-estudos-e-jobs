@@ -1,4 +1,4 @@
-<?php Session::init(); ?>
+<?php \App\Session::init(); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -24,15 +24,15 @@
 <body>
 	<div id="header">
 
-		<?php if(Session::get('loggedIn') == false): ?>
+		<?php if(\App\Session::get('loggedIn') == false): ?>
 			<a href="<?php echo URL; ?>index">Index</a>
 			<a href="<?php echo URL; ?>help">Help</a>
 		<?php endif; ?>
 
-		<?php if(Session::get('loggedIn') == true): ?>
+		<?php if(\App\Session::get('loggedIn') == true): ?>
 			<a href="<?php echo URL; ?>dashboard">Dashboard</a>	
 			<a href="<?php echo URL; ?>note">Notes</a>	
-			<?php if(Session::get('role') == 'owner'): ?>
+			<?php if(\App\Session::get('role') == 'owner'): ?>
 				<a href="<?php echo URL; ?>user">Users</a>
 			<?php endif; ?>
 			<a href="<?php echo URL; ?>dashboard/logout">Logout</a>	

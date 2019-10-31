@@ -1,6 +1,9 @@
-<?php 
+<?php
+namespace Models;
 
-class Login_Model extends Model
+use PDO;
+
+class Login_Model extends \App\Model
 {
 	public function __construct()
 	{
@@ -9,7 +12,7 @@ class Login_Model extends Model
 
 	public function run()
 	{
-		$password = Hash::create('sha256', $_POST['password'], HASH_PASSWORD_KEY);
+		$password = \App\Hash::create('sha256', $_POST['password'], HASH_PASSWORD_KEY);
 		$stmt = $this->db->prepare("SELECT * FROM users WHERE login = :login AND password = :password");
 		$stmt->execute(array(
 			':login' => ((isset($_POST['login'])) ? $_POST['login'] : ""),
@@ -21,10 +24,10 @@ class Login_Model extends Model
 		
 		if($stmt->rowCount() == 1)
 		{
-			Session::init();
-			Session::set("loggedIn", true);
-			Session::set("userid", $data['id']);
-			Session::set("role", $data['role']);
+			\App\Session::init();
+			\App\Session::set("loggedIn", true);
+			\App\Session::set("userid", $data['id']);
+			\App\Session::set("role", $data['role']);
 			header("Location: ../dashboard");
 		} 
 		else 

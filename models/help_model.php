@@ -1,4 +1,5 @@
-<?php 
+<?php
+namespace Models;
 
 class Help_Model extends Model
 {

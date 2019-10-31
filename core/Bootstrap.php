@@ -1,4 +1,5 @@
- <?php
+<?php
+namespace App;
 
 class Bootstrap
 {
@@ -57,7 +58,7 @@ class Bootstrap
 	private function _loadDefaultController()
 	{
 		require $this->_controllerPath . $this->_defaultFile;
-		$this->_controller = new Index();
+		$this->_controller = new \Controllers\Index;
 		$this->_controller->index();
 	}	
 
@@ -67,7 +68,11 @@ class Bootstrap
 
 		if(file_exists($file)){
 			require $file;
-			$this->_controller = new $this->_url[0];
+
+			$loadClass = "\Controllers" . "\\" . $this->_url[0];
+			# $this->_controller = new $this->_url[0];
+			$this->_controller = new $loadClass;
+			
 			$this->_controller->loadModel($this->_url[0], $this->_modelPath);
 		} else {
 			$this->_error();

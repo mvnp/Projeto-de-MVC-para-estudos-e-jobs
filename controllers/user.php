@@ -1,11 +1,12 @@
 <?php 
+namespace Controllers;
 
-class User extends Controller
+class User extends \App\Controller
 {
 	public function __construct()
 	{
 		parent::__construct();
-		Auth::handleLogin();
+		\Utils\Auth::handleLogin();
 		$this->view->js = array('user/js/default.js');
 	}
 

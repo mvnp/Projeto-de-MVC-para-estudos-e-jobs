@@ -1,11 +1,12 @@
 <?php 
+namespace Controllers;
 
-class Dashboard extends Controller
+class Dashboard extends \App\Controller
 {
 	public function __construct()
 	{
 		parent::__construct();
-		Auth::handleLogin();
+		\Utils\Auth::handleLogin();
 		$this->view->js = array('dashboard/js/default.js');
 	}
 
@@ -32,7 +33,7 @@ class Dashboard extends Controller
 
 	public function logout()
 	{
-		Session::destroy();
+		\App\Session::destroy();
 		header("Location: ../login");
 		exit();
 	}

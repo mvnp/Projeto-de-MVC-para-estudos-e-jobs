@@ -5,13 +5,8 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 require 'config.php';
-require 'utils/Auth.php';
+# require 'utils/Auth.php';
+require 'vendor/autoload.php';
 
-// Use an autoload
-function __autoload($class)
-{
-	require CORE . $class.".php";
-}
-
-$bootstrap = new Bootstrap();
+$bootstrap = new \App\Bootstrap;
 $bootstrap->init();

@@ -1,6 +1,7 @@
-<?php 
+<?php
+namespace Models;
 
-class Dashboard_Model extends Model
+class Dashboard_Model extends \App\Model
 {
 	
 	public function __construct()

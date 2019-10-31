@@ -1,11 +1,14 @@
 <?php 
+namespace Controllers;
 
-class Adminlte extends Controller
+use Utils;
+
+class Adminlte extends \App\Controller
 {
 	public function __construct()
 	{
 		parent::__construct();
-		# Auth::handleLogin();
+		\Utils\Auth::handleLogin();
 		$this->view->js = array('adminlte/js/default.js');
 	}
 
@@ -199,5 +202,11 @@ class Adminlte extends Controller
 	{
 		$this->view->title = "Administrador | MVC System";
 		$this->view->render("adminlte/inline", false, true);
+	}
+
+	public function palhoca()
+	{
+		$this->view->title = "Administrador | MVC System";
+		$this->view->render("adminlte/palhoca", false, true);
 	}
 }

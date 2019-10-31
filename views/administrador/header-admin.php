@@ -124,6 +124,16 @@
     }
 
     .example-modal .modal {
-      background:         
+      background:   
+    }
+    /* ... */
+    .requiredM {
+      border: 1px solid #28d028;
+      box-shadow: 1px 1px 1px #e6ffe6;
+    }
+    .recommendedM {
+      border: 1px solid orange;
+      box-shadow: 1px 1px 1px #ffecc9;
+    }
   </style>
 </head>

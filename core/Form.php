@@ -1,4 +1,5 @@
 <?php
+namespace App;
 
 /*
  * - Fill out a form

@@ -1,11 +1,12 @@
 <?php 
+namespace Controllers;
 
-class Note extends Controller
+class Note extends \App\Controller
 {
 	public function __construct()
 	{
 		parent::__construct();
-		Auth::handleLogin();
+		\Utils\Auth::handleLogin();
 		$this->view->js = array('notes/js/default.js');
 	}
 
