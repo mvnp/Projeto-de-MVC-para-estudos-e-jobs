@@ -1,4 +1,4 @@
-<body class="hold-transition skin-blue sidebar-mini sidebar-collapse">
+<body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
   <header class="main-header">
     <!-- Logo -->
@@ -473,7 +473,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Cadastrar cliente
+        Editar cliente
         <small><a href="<?php echo URL ?>customers/list">Listar clientes (<?php echo $this->count ?>)</a></small>
       </h1>
       <ol class="breadcrumb">
@@ -489,48 +489,31 @@
           <!-- Horizontal Form -->
           <div class="box box-info">
             <div class="box-header with-border">
-              <h3 class="box-title">Cadastro da empresa</h3>
+              <h3 class="box-title">Edição da empresa</h3>
             </div>
             <!-- /.box-header -->
             <!-- form start -->
               <div class="box-body">
 
-                <div id="empresa">
-                  <form id="buscando" action="<?php echo URL . 'customers/add' ?>" method="POST" enctype="application/x-www-url-encoded" style="margin-bottom:0">
-                    <div class="row">
-                      <div class="col-sm-10">
-                        <input type="text" name="url" class="requiredM form-control input-lg" value="<?php echo \App\Session::get("url") ?>" placeholder="Coloque a url da empresa" required />
-                      </div>
-                      <div class="col-sm-2">
-                        <input type="submit" value="Buscar" class="btn btn-block btn-success btn-lg" />
-                      </div>
-                    </div>
-                  </form>
-                  <?php echo str_replace("<br>", '', $this->business); ?>
-                </div>
-
-                <form method="post" id="acao" class="form-horizontal" autocomplete="off">
+                <form method="post" id="acaoEdit" class="form-horizontal" autocomplete="off">
 
                   <div class="form-group">
                     <label for="cep" class="col-sm-3 control-label">CEP</label>
-                    <div class="col-sm-7">
-                      <input type="text" name="cep" class="requiredM form-control input-lg" id="cep" placeholder="CEP do endereço da empresa" autocomplete="off" required />
-                    </div>
-                    <div class="col-sm-2">
-                      <input type="text" name="numero" class="requiredM form-control input-lg" id="numero" placeholder="Número" autocomplete="off" required />
+                    <div class="col-sm-9">
+                      <input type="text" name="cep" class="requiredM form-control" id="cep" placeholder="CEP do endereço da empresa" autocomplete="off" value="<?php echo $this->cstmer['cep'] ?>" required />
                     </div>
                   </div>
 
                   <div class="form-group">
                     <label for="fantasia" class="col-sm-3 control-label">Nome fantasia / Categoria</label>
                     <div class="col-sm-6">
-                      <input type="text" name="fantasia" class="requiredM form-control input-lg" id="fantasia" placeholder="Nome fantasia" autocomplete="off" required />
+                      <input type="text" name="fantasia" class="requiredM form-control" id="fantasia" placeholder="Nome fantasia" autocomplete="off" required value="<?php echo $this->cstmer['fantasia'] ?>" />
                     </div>
                     <div class="col-sm-3">
-                      <select class="requiredM form-control input-lg" name="categoria" id="categoria" required>
+                      <select class="requiredM form-control" name="categoria" id="categoria" required>
                         <option value="">Selecione uma categoria ...</option>
                         <?php foreach ($this->catList as $indic => $val): ?>
-                          <option value="<?php echo $val['id'] ?>"><?php echo utf8_encode($val['categoria']) ?></option>
+                          <option <?php echo (($val['id'] == $this->cstmer['categoria']) ? "selected='selected'" : "") ?> value="<?php echo $val['id'] ?>"><?php echo utf8_encode($val['categoria']) ?></option>
                         <?php endforeach; ?>
                       </select>
                     </div>
@@ -539,55 +522,55 @@
                   <div class="form-group">
                     <label for="telefone" class="col-sm-3 control-label">Comercial / Whatsapp</label>
                     <div class="col-sm-3">
-                      <input type="text" name="telefone" class="recommendedM form-control input-lg" id="telefone" placeholder="Número de telefone comercial" autocomplete="off" />
+                      <input type="text" name="telefone" class="recommendedM form-control" id="telefone" placeholder="Número de telefone comercial" autocomplete="off" value="<?php echo $this->cstmer['telefone'] ?>" />
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" name="whatsapp" class="requiredM form-control input-lg" id="whatsapp" placeholder="Número do Whatsapp" autocomplete="off" required />
+                      <input type="text" name="whatsapp" class="requiredM form-control" id="whatsapp" placeholder="Número do Whatsapp" autocomplete="off" required value="<?php echo $this->cstmer['whatsapp'] ?>" />
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" name="whatsapp2" class="recommendedM form-control input-lg" id="whatsapp2" placeholder="Número do Whatsapp" autocomplete="off" />
+                      <input type="text" name="whatsapp2" class="recommendedM form-control" id="whatsapp2" placeholder="Número do Whatsapp" autocomplete="off" value="<?php echo $this->cstmer['whatsapp2'] ?>" />
                     </div>
                   </div>
 
                   <div class="form-group">
                     <label for="email" class="col-sm-3 control-label">E-mail</label>
                     <div class="col-sm-9">
-                      <input type="text" name="email" class="recommendedM form-control input-lg" id="email" placeholder="E-mail da empresa" autocomplete="off" value="<?php echo $this->email . '@palhocaguia.com.br' ?>" />
+                      <input type="text" name="email" class="recommendedM form-control" id="email" placeholder="E-mail da empresa" autocomplete="off" value="<?php echo $this->cstmer['email'] ?>" />
                     </div>
                   </div>
 
                   <div class="form-group">
                     <label for="razao" class="col-sm-3 control-label">Facebook / Rede social</label>
                     <div class="col-sm-9">
-                      <input type="text" name="razao" class="recommendedM form-control input-lg" id="razao" placeholder="Insira uma rede social da empresa" autocomplete="off" />
+                      <input type="text" name="razao" class="recommendedM form-control" id="razao" placeholder="Insira uma rede social da empresa" autocomplete="off" value="<?php echo $this->cstmer['razao'] ?>" />
                     </div>
                   </div>
 
                   <div class="form-group">
                     <label for="razao" class="col-sm-3 control-label">Instagram</label>
                     <div class="col-sm-9">
-                      <input type="text" name="instagram" class="recommendedM form-control input-lg" id="instagram" placeholder="Insira instagram" autocomplete="off" />
+                      <input type="text" name="instagram" class="recommendedM form-control" id="instagram" placeholder="Insira instagram" autocomplete="off" value="<?php echo $this->cstmer['instagram'] ?>" />
                     </div>
                   </div>
 
                   <div class="form-group">
                     <label for="website" class="col-sm-3 control-label">Website</label>
                     <div class="col-sm-9">
-                      <input type="text" name="website" class="recommendedM form-control input-lg" id="website" placeholder="Website da empresa ou facebook ou instagram" autocomplete="off" />
+                      <input type="text" name="website" class="recommendedM form-control" id="website" placeholder="Website da empresa ou facebook ou instagram" autocomplete="off" value="<?php echo $this->cstmer['website'] ?>" />
                     </div>
                   </div>
 
                   <div class="form-group">
                     <label for="responsavel" class="col-sm-3 control-label">Nome responsável</label>
                     <div class="col-sm-9">
-                      <input type="text" name="responsavel" class="form-control input-lg" id="responsavel" placeholder="Nome do responsável" autocomplete="off" />
+                      <input type="text" name="responsavel" class="form-control" id="responsavel" placeholder="Nome do responsável" autocomplete="off" value="<?php echo $this->cstmer['responsavel'] ?>" />
                     </div>
                   </div>
 
                   <div class="form-group">
                     <label for="cnpj" class="col-sm-3 control-label">CNPJ ou CPF</label>
                     <div class="col-sm-9">
-                      <input type="text" name="cnpj" class="form-control input-lg" id="cnpj" placeholder="Número do CNPJ" autocomplete="off" />
+                      <input type="text" name="cnpj" class="form-control" id="cnpj" placeholder="Número do CNPJ" autocomplete="off"  value="<?php echo $this->cstmer['cnpj'] ?>" />
                     </div>
                   </div>
 
@@ -597,27 +580,31 @@
 
                   <div class="form-group">
                     <label for="endereco" class="col-sm-3 control-label">Endereço completo</label>
-                    <div class="col-sm-6">
-                      <input type="text" id="logradouro" name="endereco" class="requiredM form-control input-lg" id="endereco" placeholder="Rua, Avenida ou outro sem número" autocomplete="off" required />
+                    <div class="col-sm-5">
+                      <input type="text" id="logradouro" name="endereco" class="requiredM form-control" id="endereco" placeholder="Rua, Avenida ou outro sem número" autocomplete="off" required value="<?php echo $this->cstmer['endereco'] ?>" />
                     </div>
-                    <div class="col-sm-3">
-                      <input type="text" name="complemento" class="form-control input-lg" id="complemento" placeholder="Complemento" autocomplete="off" />
+                    <div class="col-sm-2">
+                      <input type="text" name="numero" class="requiredM form-control" id="numero" placeholder="Número" autocomplete="off" required value="<?php echo $this->cstmer['numero'] ?>" />
+                    </div>
+                    <div class="col-sm-2">
+                      <input type="text" name="complemento" class="form-control" id="complemento" placeholder="Complemento" autocomplete="off" value="<?php echo $this->cstmer['complemento'] ?>" />
                     </div>
                   </div>
 
                   <div class="form-group">
                     <label for="endereco" class="col-sm-3 control-label">(+) complementos</label>
                     <div class="col-sm-3">
-                      <input type="text" id="bairro" name="bairro" class="requiredM form-control input-lg" id="endereco" placeholder="Preencher bairro" autocomplete="off" required />
+                      <input type="text" id="bairro" name="bairro" class="requiredM form-control" id="endereco" placeholder="Preencher bairro" autocomplete="off" required value="<?php echo $this->cstmer['bairro'] ?>" />
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" id="localidade" name="cidade" class="requiredM form-control input-lg" id="cidade" placeholder="Preencher cidade" autocomplete="off" required />
+                      <input type="text" id="localidade" name="cidade" class="requiredM form-control" id="cidade" placeholder="Preencher cidade" autocomplete="off" required value="<?php echo $this->cstmer['cidade'] ?>" />
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" id="uf" name="estado" class="requiredM form-control input-lg" id="estado" placeholder="Preencher estado" autocomplete="off" required />
-                      <input type="hidden" name="created_at" value="<?php echo date("Y-m-d H:i:s") ?>" required />
+                      <input type="text" id="uf" name="estado" class="requiredM form-control" id="estado" placeholder="Preencher estado" autocomplete="off" required value="<?php echo $this->cstmer['estado'] ?>" />
+                      <input type="hidden" name="created_at" value="<?php echo $this->cstmer['created_at'] ?>" required />
                       <input type="hidden" name="updated_at" value="<?php echo date("Y-m-d H:i:s") ?>" required />
-                      <input type="hidden" name="active" value="SIM" required />
+                      <input type="hidden" name="id" value="<?php echo $this->cstmer['id'] ?>" required />
+                      <input type="hidden" name="active" value="SIM" required />  
                     </div>
                   </div>
 

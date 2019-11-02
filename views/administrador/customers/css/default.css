@@ -1,0 +1,22 @@
+#empresa {
+	background: #000;
+    padding: 25px;
+    color: #fff;
+    font-size: 16px;
+    clear: both;
+    display: block;
+    margin-bottom: 25px
+}
+#empresa > h1, 
+#empresa .tagline, 
+#empresa .imgLogo, 
+#empresa img { 
+	display: none !important;
+}
+#empresa > h2 {
+	margin-top: 0;
+    margin-bottom: 18px;
+}
+#empresa .cliente-infodados > div {
+	display: none !important;
+}

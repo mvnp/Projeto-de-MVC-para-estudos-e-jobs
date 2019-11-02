@@ -23,6 +23,31 @@ $(function()
 			}
 		})
 	})
+	/**
+	 * Cadastro da empresa no banco de dados
+	 * @return {[type]} [description]
+	 */
+	$(document).on('submit', '#acaoEdit', function(event) 
+	{
+		event.preventDefault()
+		/* Act on the event */
+		var url = 'https://palhocasites.com.br/vista/'
+		var form = $(this).serializeArray()
+		var id = $("input[name='id']").val()
+
+		$.ajax({
+			url: url+'customers/edit_/'+id, type: 'POST',
+			dataType: 'json', data: {form: form},
+			success: function(retorno){
+				if(retorno == true){
+					$('#acaoEdit').trigger("reset")
+					alert("Atualização efetuada com sucesso")
+				} else {
+					alert("Não foi possível cadastrar o celular")
+				}
+			}
+		})
+	})
 
 	/**
 	 * Mascara de validação dos inputs
@@ -98,4 +123,86 @@ $(function()
 	    	limpa_formulário_cep(cep == "" ? undefined : "Formato de CEP inválido.");
 	  	}
 	})	
+
+	/*
+	 * Substitui as ocorrências de espaços nos telefones
+	 * para poder melhor manipular a informação.
+	 */
+	$("#empresa").html($("#empresa").html().replace(/ - /g, "-"))
+	$("#whatsapp").focusin()	
+	$("#whatsapp2").focusin()
+
+	/**
+	 * Verify exists
+	 */
+	$("input[name='email']").on('blur', function(event) {
+		event.preventDefault();
+		/* Act on the event */
+		console.log("verificar")
+		var url = 'https://palhocasites.com.br/vista/'
+
+		$.ajax({
+			url: url+'customers/getEmail', type: 'POST',
+			dataType: 'json', data: {email: $(this).val()},
+			success: function(retorno){
+				if(retorno == true){
+					$('input[name="email"]').addClass("bg-red-active").val("").text("")
+					$('#acao').trigger("reset")
+				} else {
+					$('input[name="email"]').removeClass("bg-red-active")
+				}
+			}
+		})		
+	});
+
+	/**
+	 * Verify exists
+	 */
+	$("input[name='telefone']").on('blur', function(event) {
+		event.preventDefault();
+		/* Act on the event */
+		var url = 'https://palhocasites.com.br/vista/'
+		var telefone = $("input[name='telefone']").val()
+
+		if($(telefone).length > 5){
+			$.ajax({
+				url: url+'customers/getTelefone', type: 'POST',
+				dataType: 'json', data: {telefone: $(this).val()},
+				success: function(retorno){
+					if(retorno == true){
+						$('input[name="telefone"]').addClass("bg-red-active").val("").text("")
+						$('#acao').trigger("reset")
+					} else {
+						$('input[name="telefone"]').removeClass("bg-red-active")
+					}
+				}
+			})	
+		}	
+	});
+
+	/**
+	 * Verify exists
+	 */
+	$("input[name='whatsapp']").on('blur', function(event) {
+		event.preventDefault();
+		/* Act on the event */
+		var url = 'https://palhocasites.com.br/vista/'
+		var whatsapp = $("input[name='whatsapp']").val()
+
+		if($(whatsapp).length > 0){
+			$.ajax({
+				url: url+'customers/getWhatsapp', type: 'POST',
+				dataType: 'json', data: {whatsapp: $(this).val()},
+				success: function(retorno){
+					if(retorno == true){
+						$('input[name="whatsapp"]').addClass("bg-red-active").val("").text("")
+						$('#acao').trigger("reset")
+					} else {
+						$('input[name="whatsapp"]').removeClass("bg-red-active")
+					}
+				}
+			})
+		}		
+	});
+
 })

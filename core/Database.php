@@ -23,6 +23,25 @@ class Database extends PDO
 		return $stmt->fetchAll($fecthMode);
 	}
 
+	public function selectOne($sql, $array = [], $fecthMode = PDO::FETCH_ASSOC)
+	{
+		$stmt = $this->prepare($sql);
+		foreach ($array as $key => $value) {
+			$stmt->bindValue(":$key", $value);
+		}
+
+		$stmt->execute();
+
+		return $stmt->fetch($fecthMode);
+	}
+
+	public function selectCount($sql, $array = [], $fecthMode = PDO::FETCH_ASSOC)
+	{
+		$stmt = $this->prepare($sql);
+		$stmt->execute();
+		return $stmt->rowCount();
+	}
+
 	/**
 	 * insert
 	 * @param  string $table A name of table to insert into

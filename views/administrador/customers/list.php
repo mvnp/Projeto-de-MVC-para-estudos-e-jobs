@@ -292,18 +292,21 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
-        <li class="treeview">
+        <li class="treeview menu-open">
           <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+            <i class="fa fa-dashboard"></i> <span>Painel de Contrôle</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
-          <ul class="treeview-menu">
-            <li><a href="<?php echo URL ?>adminlte/dash1"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-            <li><a href="<?php echo URL ?>adminlte/dash2"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>          </ul>
+          <ul class="treeview-menu" style="display: block">
+            <!-- li><a href="<?php echo URL ?>adminlte/dash1"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
+            <li><a href="<?php echo URL ?>adminlte/dash2"><i class="fa fa-circle-o"></i> Dashboard v2</a></li -->
+            <li><a href="<?php echo URL ?>customers/list"><i class="fa fa-circle-o"></i> Listar clientes</a></li>
+            <li><a href="<?php echo URL ?>customers/add"><i class="fa fa-circle-o"></i> Cadastrar clientes</a></li>
+          </ul>
         </li>
-        <li class="treeview">
+        <!-- li class="treeview">
           <a href="#">
             <i class="fa fa-files-o"></i>
             <span>Layout Options</span>
@@ -356,11 +359,10 @@
             <li><a href="<?php echo URL ?>adminlte/buttons"><i class="fa fa-circle-o"></i> Buttons</a></li>
             <li><a href="<?php echo URL ?>adminlte/sliders"><i class="fa fa-circle-o"></i> Sliders</a></li>
             <li><a href="<?php echo URL ?>adminlte/timeline"><i class="fa fa-circle-o"></i> Timeline</a></li>
-
             <li><a href="<?php echo URL ?>adminlte/modals"><i class="fa fa-circle-o"></i> Modals</a></li>
           </ul>
         </li>
-        <li class="treeview">
+        <li class="treeview active">
           <a href="#">
             <i class="fa fa-edit"></i> <span>Forms</span>
             <span class="pull-right-container">
@@ -368,12 +370,12 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo URL ?>adminlte/form1"><i class="fa fa-circle-o"></i> General Elements</a></li>
+            <li class="active"><a href="<?php echo URL ?>adminlte/form1"><i class="fa fa-circle-o"></i> General Elements</a></li>
             <li><a href="<?php echo URL ?>adminlte/form2"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
             <li><a href="<?php echo URL ?>adminlte/form3"><i class="fa fa-circle-o"></i> Editors</a></li>
           </ul>
         </li>
-        <li class="treeview active">
+        <li class="treeview">
           <a href="#">
             <i class="fa fa-table"></i> <span>Tables</span>
             <span class="pull-right-container">
@@ -381,8 +383,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="<?php echo URL ?>/adminlte/tabela1"><i class="fa fa-circle-o"></i> Simple tables</a></li>
-            <li><a href="<?php echo URL ?>/adminlte/tabela2"><i class="fa fa-circle-o"></i> Data tables</a></li>
+            <li><a href="<?php echo URL ?>adminlte/tabela1"><i class="fa fa-circle-o"></i> Simple tables</a></li>
+            <li><a href="<?php echo URL ?>adminlte/tabela2"><i class="fa fa-circle-o"></i> Data tables</a></li>
           </ul>
         </li>
         <li>
@@ -460,7 +462,7 @@
         <li class="header">LABELS</li>
         <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
         <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
-        <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
+        <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li -->
       </ul>
     </section>
     <!-- /.sidebar -->

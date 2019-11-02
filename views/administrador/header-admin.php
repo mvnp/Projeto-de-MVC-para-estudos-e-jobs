@@ -29,6 +29,11 @@
   <link rel="stylesheet" href="<?php echo PUBLIC_URL ?>bower_components/bootstrap-daterangepicker/daterangepicker.css" />
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="<?php echo PUBLIC_URL ?>plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" />
+  <?php if(isset($this->js)): ?>
+    <?php foreach ($this->css as $css): ?>
+      <?php echo '<link rel="stylesheet" href="'.URL.'views/administrador/'.$css.'" />'; ?>
+    <?php endforeach; ?>
+  <?php endif; ?>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -124,16 +129,20 @@
     }
 
     .example-modal .modal {
-      background:   
+      background:  /**/ 
     }
+
     /* ... */
     .requiredM {
       border: 1px solid #28d028;
       box-shadow: 1px 1px 1px #e6ffe6;
     }
+
     .recommendedM {
       border: 1px solid orange;
       box-shadow: 1px 1px 1px #ffecc9;
     }
+    
+    article > div { display: none }
   </style>
 </head>

@@ -13,4 +13,9 @@ class Help extends \App\Controller
 		$this->view->title = "Help | MVC System";
 		$this->view->render("help/index");
 	}
+
+	public function hello()
+	{
+		return "hello world";
+	}
 }
